@@ -2,7 +2,7 @@
 # Each task is a separate function imported from its respective module.
 # The user can choose which task to run, and the program will execute it and display the results.
 # Lab Work Number: №3
-# Program Version: 3.0
+# Program Version: 1.0
 # Developer: Tarhonski Dzmitry
 # Development Date: 28.03.2024
 import os

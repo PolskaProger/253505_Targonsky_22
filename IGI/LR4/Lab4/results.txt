@@ -1,0 +1,15 @@
+num_sentences: 7
+declarative_sentences: 6
+interrogative_sentences: 1
+imperative_sentences: 1
+avg_sentence_length: 4.285714285714286
+avg_word_length: 3.3666666666666667
+num_smiles: 1
+emails: []
+email_names: []
+text: Hello, my name is Jane. How's it going? I'm doing well, thanks.
+Let's meet tomorrow at 10:00 AM. Can you send me your feedback?
+Thank you! :) :-) ;-) ;-))))))))))))))))))))))))))))))))
+num_vowel_words: 0
+char_count: Counter({')': 35, ' ': 27, 'e': 11, 'o': 10, 'n': 8, 'a': 7, 'm': 6, 't': 6, 's': 5, 'l': 4, 'y': 4, 'i': 4, '.': 3, 'w': 3, "'": 3, 'g': 3, 'd': 3, 'k': 3, 'r': 3, '0': 3, ':': 3, 'u': 3, '-': 3, 'H': 2, ',': 2, '?': 2, 'h': 2, '\n': 2, ';': 2, 'J': 1, 'I': 1, 'L': 1, '1': 1, 'A': 1, 'M': 1, 'C': 1, 'f': 1, 'b': 1, 'c': 1, 'T': 1, '!': 1})
+words_after_comma: ['my', 'thanks']
