@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+
+<title>{{ doctor.last_name }}</title>
+{% endblock %}
+
+{% block main %}
+<div class="doctor-details">
+    <h1>{{ doctor.first_name }} {{ doctor.last_name }}</h1>
+    <p>Категория: {{ doctor.category.all|join:", " }}</p>
+    <p>Опыт работы: {{ doctor.work_experience }}</p>
+    {% if doctor.image %}
+        <img src="{{ doctor.image.url }}" alt="{{ doctor.first_name }} {{ doctor.last_name }}" style="max-width: 400px; max-height: 400px;">
+    {% endif %}
+</div>
+{% endblock %}

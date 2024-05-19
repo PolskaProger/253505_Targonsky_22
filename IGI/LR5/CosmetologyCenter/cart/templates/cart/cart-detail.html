@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+
+<title>Корзина</title>
+{% endblock %}
+
+{% block main %}
+<h1>Ваша корзина</h1>
+
+<table class="cart" width="100%">
+    <thead>
+        <tr>
+            <th>Услуга</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Цена</th>
+            <th>Удаление</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in cart %}
+        <tr>
+            <td>{{ item.service.service_name }}</td>
+            <td>{{ item.date }}</td>
+            <td>{{ item.time }}</td>
+            <td class="num">${{ item.service.price }}</td>
+            <td><a href="{% url 'cart:cart_remove' item.id %}">Удалить</a></td>
+        </tr>
+        {% endfor %}
+        <tr class="total">
+            <td>Total</td>
+            <td colspan="5"></td>
+            <td class="num total_price">
+                ${{ cart.get_total_price|floatformat:"2" }}
+            </td>
+        </tr>
+    </tbody>    
+</table>
+
+<hr>
+<form method="post" action="{% url 'appointments:create_appointments' %}" id="appointmentForm">
+    {% csrf_token %}
+    <button type="button" id="ageConfirmationButton">Записаться</button>
+</form>
+
+<input type="number" id="dob">
+<button onclick="applyPromo()">Применить скидку</button>
+<script src="{% static 'js/promo.js'%}"></script>
+
+<script>
+    document.getElementById("ageConfirmationButton").addEventListener("click", function () {
+        var result = confirm("Подтвердите, что вам 18 лет или старше.");
+        if (result === true) {
+            document.getElementById("appointmentForm").submit();
+        }
+    });
+</script>
+{% endblock %}
+
