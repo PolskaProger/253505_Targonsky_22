@@ -29,7 +29,7 @@ def analyze_text(text):
     avg_word_length = sum(len(word) for word in words) / len(words)
 
     # Количество смайликов
-    smiles = re.findall(r'[;:]-*[\(\)\[\]]{2,}', text)
+    smiles = re.findall(r'[:;]-*(\)+|\(+|\]+|\[+)', text)
     num_smiles = len(smiles)
 
     # Email и имена адресатов
@@ -37,10 +37,10 @@ def analyze_text(text):
     email_names = [email.split('@')[0] for email in emails]
 
     # Замена $v_(i)$ на v[i]
-    text = re.sub(r'\$v_\(([a-zA-Z0-9]+)\)', r'v[\1]', text)
+    text = re.sub(r'\$v_\(([0-9]+)\)', r'v[\1]', text)
 
     # Количество слов, начинающихся или заканчивающихся на гласную букву
-    vowel_words = re.findall(r'\b[aeiouAEIOU]\w*[aeiouAEIOU]\b', text)
+    vowel_words = re.findall(r'\b[aeiouAEIOU]\w*|\b\w*[aeiouAEIOU]\b', text)
     num_vowel_words = len(vowel_words)
 
     # Повторяется каждый символ

@@ -1,11 +1,10 @@
 # This is the main file for running a series of Python programs as part of a lab assignment.
 # Each task is a separate function imported from its respective module.
 # The user can choose which task to run, and the program will execute it and display the results.
-# Lab Work Number: №3
+# Lab Work Number: №4
 # Program Version: 1.0
 # Developer: Tarhonski Dzmitry
-# Development Date: 28.03.2024
-import os
+# Development Date: 20.04.2024
 
 # Import the module where the calculate_series function is defined
 from task1 import task1
@@ -79,7 +78,7 @@ def main():
                             print("Task №3 selected")
                             task3()
                             # Ask the user if they want to run the program again
-                            run_again = input("Do you want to run task №1 again? (yes/no): ")
+                            run_again = input("Do you want to run task №3 again? (yes/no): ")
                             if run_again.lower() == 'yes':
                                 print("Restarting the task")
                             if run_again.lower() == 'no':
@@ -100,7 +99,7 @@ def main():
                             print("Task №4 selected")
                             task4()
                             # Ask the user if they want to run the program again
-                            run_again = input("Do you want to run task №1 again? (yes/no): ")
+                            run_again = input("Do you want to run task №4 again? (yes/no): ")
                             if run_again.lower() == 'yes':
                                 print("Restarting the task")
                             if run_again.lower() == 'no':
@@ -121,7 +120,7 @@ def main():
                             print("Task №5 selected")
                             task5()
                             # Ask the user if they want to run the program again
-                            run_again = input("Do you want to run task №1 again? (yes/no): ")
+                            run_again = input("Do you want to run task №5 again? (yes/no): ")
                             if run_again.lower() == 'yes':
                                 print("Restarting the task")
                             if run_again.lower() == 'no':
