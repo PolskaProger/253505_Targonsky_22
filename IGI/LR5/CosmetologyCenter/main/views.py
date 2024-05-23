@@ -4,6 +4,10 @@ from .models import News, FAQ, Review, Banner, Promotional_code, Job
 from .form import ReviewForm
 import requests
 import logging
+from django.test import TestCase, Client
+from django.urls import reverse
+from .models import News, FAQ, Review, Banner, Promotional_code, Job
+from services.models import Service, ServiceType
 
 
 logger = logging.getLogger(__name__)
@@ -108,3 +112,74 @@ def my_view(request):
     logger.warning('Это сообщение с уровнем WARNING')
     logger.error('Это сообщение с уровнем ERROR')
     logger.critical('Это сообщение с уровнем CRITICAL')
+
+class MainViewsTestCase(TestCase):
+    def setUp(self):
+        self.client = Client()
+        self.service_type = ServiceType.objects.create(name='Test Service Type')
+        self.service = Service.objects.create(name='Test Service', price=100, service_type=self.service_type)
+        self.news = News.objects.create(title='Test News', content='Test Content')
+        self.banners = Banner.objects.create(title='Test Banner', image='test_image.jpg')
+        self.faq = FAQ.objects.create(question='Test Question', answer='Test Answer')
+        self.review = Review.objects.create(text='Test Review', rating=5, author='Test Author')
+        self.promotional_code = Promotional_code.objects.create(code='Test Code', is_actual=True)
+        self.job = Job.objects.create(title='Test Job', description='Test Description', is_actual=True)
+
+    def test_home_view(self):
+        response = self.client.get(reverse('main:home'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/home.html')
+
+    def test_about_view(self):
+        response = self.client.get(reverse('main:about'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/about.html')
+
+    def test_price_list_view(self):
+        response = self.client.get(reverse('main:price_list'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/price-list.html')
+
+    def test_news_view(self):
+        response = self.client.get(reverse('main:news'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/news.html')
+
+    def test_faq_view(self):
+        response = self.client.get(reverse('main:faq'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/FAQ.html')
+
+    def test_privacy_policy_view(self):
+        response = self.client.get(reverse('main:privacy_policy'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/privacy_policy.html')
+
+    def test_reviews_view(self):
+        response = self.client.get(reverse('main:reviews'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/reviews.html')
+
+    def test_create_review_view(self):
+        response = self.client.get(reverse('main:create_review'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/create_review.html')
+
+    def test_sandbox_view(self):
+        response = self.client.get(reverse('main:sandbox'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/sandbox.html')
+
+    def test_promotional_code_view(self):
+        response = self.client.get(reverse('main:promotional_code'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/promotional_code.html')
+
+    def test_vacancies_view(self):
+        response = self.client.get(reverse('main:vacancies'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'main/job.html')
+
+    def test_my_view(self):
+        response = self.client.get(reverse('main:my_view'))
+        self.assertEqual(response.status_code, 200)

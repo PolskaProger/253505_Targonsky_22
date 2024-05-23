@@ -5567,3 +5567,383 @@ WARNING 2024-05-19 14:20:06,391 log Not Found: /doctors/media/images/logo.jpg
 WARNING 2024-05-19 14:20:06,391 log Not Found: /doctors/media/images/logo.jpg
 WARNING 2024-05-19 14:20:06,392 basehttp "GET /doctors/media/images/logo.jpg HTTP/1.1" 404 7069
 WARNING 2024-05-19 14:20:06,392 basehttp "GET /doctors/media/images/logo.jpg HTTP/1.1" 404 7069
+INFO 2024-05-19 19:25:45,904 autoreload Watching for file changes with StatReloader
+INFO 2024-05-19 19:25:45,904 autoreload Watching for file changes with StatReloader
+INFO 2024-05-19 19:26:37,234 autoreload Watching for file changes with StatReloader
+INFO 2024-05-19 19:26:37,234 autoreload Watching for file changes with StatReloader
+INFO 2024-05-19 19:26:45,176 views Method home
+INFO 2024-05-19 19:26:45,404 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-19 19:26:45,404 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-19 19:26:45,506 basehttp "GET /media/images/logo.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 19:26:45,506 basehttp "GET /media/images/logo.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 19:26:45,524 basehttp "GET /media/images/manicure_N4BqLnc.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 19:26:45,524 basehttp "GET /media/images/manicure_N4BqLnc.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 19:26:45,568 basehttp "GET /media/images/massaj_6yFwr2z.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 19:26:45,568 basehttp "GET /media/images/massaj_6yFwr2z.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 19:26:45,620 basehttp "GET /media/images/OIP_1.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 19:26:45,620 basehttp "GET /media/images/OIP_1.jpg HTTP/1.1" 304 0
+WARNING 2024-05-19 19:26:45,862 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:26:45,862 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:26:45,862 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:45,862 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:45,863 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:26:45,863 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-19 19:26:51,562 views Method price_list
+INFO 2024-05-19 19:26:51,657 basehttp "GET /prices/ HTTP/1.1" 200 2520
+INFO 2024-05-19 19:26:51,657 basehttp "GET /prices/ HTTP/1.1" 200 2520
+WARNING 2024-05-19 19:26:51,764 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:26:51,764 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:26:51,766 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:51,766 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:51,773 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:26:51,773 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-19 19:26:56,283 basehttp "GET /about/ HTTP/1.1" 200 6004
+INFO 2024-05-19 19:26:56,283 basehttp "GET /about/ HTTP/1.1" 200 6004
+WARNING 2024-05-19 19:26:56,384 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:56,384 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:56,396 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:26:56,396 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:26:56,418 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:26:56,418 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-19 19:26:57,853 views Method price_list
+INFO 2024-05-19 19:26:57,911 basehttp "GET /prices/ HTTP/1.1" 200 2520
+INFO 2024-05-19 19:26:57,911 basehttp "GET /prices/ HTTP/1.1" 200 2520
+WARNING 2024-05-19 19:26:58,024 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:26:58,024 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:26:58,026 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:58,026 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:26:58,040 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:26:58,040 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-19 19:27:03,115 basehttp "GET /about/ HTTP/1.1" 200 6004
+INFO 2024-05-19 19:27:03,115 basehttp "GET /about/ HTTP/1.1" 200 6004
+WARNING 2024-05-19 19:27:03,196 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:03,196 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:03,210 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:03,210 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:03,246 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:03,246 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-19 19:27:05,772 views Method news
+INFO 2024-05-19 19:27:05,838 basehttp "GET /news/ HTTP/1.1" 200 4954
+INFO 2024-05-19 19:27:05,838 basehttp "GET /news/ HTTP/1.1" 200 4954
+WARNING 2024-05-19 19:27:05,988 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:05,988 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:05,996 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:05,996 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:06,022 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:06,022 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-19 19:27:06,796 views Method reviews
+INFO 2024-05-19 19:27:06,928 basehttp "GET /rewiews/ HTTP/1.1" 200 3109
+INFO 2024-05-19 19:27:06,928 basehttp "GET /rewiews/ HTTP/1.1" 200 3109
+WARNING 2024-05-19 19:27:06,981 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:06,981 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:06,983 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:06,983 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:06,993 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:06,993 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-19 19:27:08,074 basehttp "GET /cart/ HTTP/1.1" 200 3248
+INFO 2024-05-19 19:27:08,074 basehttp "GET /cart/ HTTP/1.1" 200 3248
+WARNING 2024-05-19 19:27:08,170 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:08,170 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:08,172 basehttp "GET /static/js/promo.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:08,172 basehttp "GET /static/js/promo.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:08,192 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:08,192 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:08,211 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:08,211 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-19 19:27:11,308 basehttp "GET /promotional_code/ HTTP/1.1" 200 2305
+INFO 2024-05-19 19:27:11,308 basehttp "GET /promotional_code/ HTTP/1.1" 200 2305
+WARNING 2024-05-19 19:27:11,415 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:11,415 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:11,423 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:11,423 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:11,451 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:11,451 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-19 19:27:12,313 basehttp "GET /cart/ HTTP/1.1" 200 3248
+INFO 2024-05-19 19:27:12,313 basehttp "GET /cart/ HTTP/1.1" 200 3248
+WARNING 2024-05-19 19:27:12,431 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:12,431 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:12,445 basehttp "GET /static/js/promo.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:12,445 basehttp "GET /static/js/promo.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:12,464 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:12,464 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:12,475 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:12,475 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-19 19:27:13,716 basehttp "GET /vacancies/ HTTP/1.1" 200 2356
+INFO 2024-05-19 19:27:13,716 basehttp "GET /vacancies/ HTTP/1.1" 200 2356
+WARNING 2024-05-19 19:27:13,801 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:13,801 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-19 19:27:13,805 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:13,805 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-19 19:27:13,820 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-19 19:27:13,820 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-20 19:42:04,355 autoreload Watching for file changes with StatReloader
+INFO 2024-05-20 19:42:04,355 autoreload Watching for file changes with StatReloader
+INFO 2024-05-20 19:42:12,684 views Method home
+INFO 2024-05-20 19:42:12,893 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-20 19:42:12,893 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-20 19:42:12,915 basehttp "GET /media/images/logo.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:12,915 basehttp "GET /media/images/logo.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:12,929 basehttp "GET /media/images/massaj_6yFwr2z.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:12,929 basehttp "GET /media/images/massaj_6yFwr2z.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:12,940 basehttp "GET /media/images/OIP_1.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:12,940 basehttp "GET /media/images/OIP_1.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:12,971 basehttp "GET /media/images/manicure_N4BqLnc.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:12,971 basehttp "GET /media/images/manicure_N4BqLnc.jpg HTTP/1.1" 304 0
+WARNING 2024-05-20 19:42:13,267 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:13,267 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:13,269 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:13,269 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:13,271 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:13,271 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-20 19:42:17,485 views Method faq
+INFO 2024-05-20 19:42:17,566 basehttp "GET /FAQ/ HTTP/1.1" 200 2513
+INFO 2024-05-20 19:42:17,566 basehttp "GET /FAQ/ HTTP/1.1" 200 2513
+WARNING 2024-05-20 19:42:17,627 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:17,627 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:17,632 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:17,632 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:17,654 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:17,654 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-20 19:42:25,568 basehttp "GET /services/ HTTP/1.1" 200 3486
+INFO 2024-05-20 19:42:25,568 basehttp "GET /services/ HTTP/1.1" 200 3486
+WARNING 2024-05-20 19:42:25,654 basehttp "GET /static/js/card_effect.js HTTP/1.1" 404 1810
+WARNING 2024-05-20 19:42:25,654 basehttp "GET /static/js/card_effect.js HTTP/1.1" 404 1810
+WARNING 2024-05-20 19:42:25,672 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:25,672 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:25,709 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:25,709 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:25,713 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:25,713 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+INFO 2024-05-20 19:42:25,758 basehttp "GET /media/images/OIP_1_hRsCdmW.jpg HTTP/1.1" 200 13406
+INFO 2024-05-20 19:42:25,758 basehttp "GET /media/images/OIP_1_hRsCdmW.jpg HTTP/1.1" 200 13406
+INFO 2024-05-20 19:42:26,834 views Method home
+INFO 2024-05-20 19:42:26,886 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-20 19:42:26,886 basehttp "GET / HTTP/1.1" 200 2965
+WARNING 2024-05-20 19:42:26,983 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:26,983 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:27,001 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:27,001 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:27,018 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:27,018 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-20 19:42:27,752 basehttp "GET /doctors/doctors/ HTTP/1.1" 200 3009
+INFO 2024-05-20 19:42:27,752 basehttp "GET /doctors/doctors/ HTTP/1.1" 200 3009
+INFO 2024-05-20 19:42:27,796 basehttp "GET /media/images/OIP_hsibCtJ.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:27,796 basehttp "GET /media/images/OIP_hsibCtJ.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:27,799 basehttp "GET /media/images/R_1.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:27,799 basehttp "GET /media/images/R_1.jpg HTTP/1.1" 304 0
+WARNING 2024-05-20 19:42:27,856 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:27,856 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:27,863 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:27,863 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+INFO 2024-05-20 19:42:27,863 basehttp "GET /media/images/R_9akOrnO.jpg HTTP/1.1" 304 0
+INFO 2024-05-20 19:42:27,863 basehttp "GET /media/images/R_9akOrnO.jpg HTTP/1.1" 304 0
+WARNING 2024-05-20 19:42:27,885 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:27,885 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:27,941 log Not Found: /doctors/media/images/logo.jpg
+WARNING 2024-05-20 19:42:27,941 log Not Found: /doctors/media/images/logo.jpg
+WARNING 2024-05-20 19:42:27,942 basehttp "GET /doctors/media/images/logo.jpg HTTP/1.1" 404 7069
+WARNING 2024-05-20 19:42:27,942 basehttp "GET /doctors/media/images/logo.jpg HTTP/1.1" 404 7069
+INFO 2024-05-20 19:42:28,587 views Method news
+INFO 2024-05-20 19:42:28,643 basehttp "GET /news/ HTTP/1.1" 200 4954
+INFO 2024-05-20 19:42:28,643 basehttp "GET /news/ HTTP/1.1" 200 4954
+WARNING 2024-05-20 19:42:28,718 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:28,718 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:28,721 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:28,721 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:28,737 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:28,737 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-20 19:42:29,364 views Method reviews
+INFO 2024-05-20 19:42:29,425 basehttp "GET /rewiews/ HTTP/1.1" 200 3109
+INFO 2024-05-20 19:42:29,425 basehttp "GET /rewiews/ HTTP/1.1" 200 3109
+WARNING 2024-05-20 19:42:29,525 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:29,525 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:29,527 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:29,527 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:29,542 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:29,542 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-20 19:42:30,476 basehttp "GET /cart/ HTTP/1.1" 200 3248
+INFO 2024-05-20 19:42:30,476 basehttp "GET /cart/ HTTP/1.1" 200 3248
+WARNING 2024-05-20 19:42:30,595 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:30,595 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:30,601 basehttp "GET /static/js/promo.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:30,601 basehttp "GET /static/js/promo.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:30,625 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:30,625 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:30,630 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:30,630 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-20 19:42:31,857 basehttp "GET /promotional_code/ HTTP/1.1" 200 2305
+INFO 2024-05-20 19:42:31,857 basehttp "GET /promotional_code/ HTTP/1.1" 200 2305
+WARNING 2024-05-20 19:42:31,941 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:31,941 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:31,952 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:31,952 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:31,955 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:31,955 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+INFO 2024-05-20 19:42:33,275 basehttp "GET /doctors/login/?next=/promotional_code/ HTTP/1.1" 200 2638
+INFO 2024-05-20 19:42:33,275 basehttp "GET /doctors/login/?next=/promotional_code/ HTTP/1.1" 200 2638
+WARNING 2024-05-20 19:42:33,387 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:33,387 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-20 19:42:33,391 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:33,391 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-20 19:42:33,406 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-20 19:42:33,406 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-23 12:33:58,634 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 12:33:58,634 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 12:34:09,371 autoreload D:\University\253505\»√»\253505_Targonski_22\IGI\LR5\CosmetologyCenter\CosmetologyCenter\settings.py changed, reloading.
+INFO 2024-05-23 12:34:09,371 autoreload D:\University\253505\»√»\253505_Targonski_22\IGI\LR5\CosmetologyCenter\CosmetologyCenter\settings.py changed, reloading.
+INFO 2024-05-23 12:34:10,237 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 12:34:10,237 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 12:34:13,388 views Method home
+INFO 2024-05-23 12:34:13,557 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-23 12:34:13,557 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-23 12:34:13,601 basehttp "GET /media/images/logo.jpg HTTP/1.1" 304 0
+INFO 2024-05-23 12:34:13,601 basehttp "GET /media/images/logo.jpg HTTP/1.1" 304 0
+INFO 2024-05-23 12:34:13,603 basehttp "GET /media/images/OIP_1.jpg HTTP/1.1" 304 0
+INFO 2024-05-23 12:34:13,603 basehttp "GET /media/images/OIP_1.jpg HTTP/1.1" 304 0
+INFO 2024-05-23 12:34:13,608 basehttp "GET /media/images/massaj_6yFwr2z.jpg HTTP/1.1" 304 0
+INFO 2024-05-23 12:34:13,608 basehttp "GET /media/images/massaj_6yFwr2z.jpg HTTP/1.1" 304 0
+INFO 2024-05-23 12:34:13,608 basehttp "GET /media/images/manicure_N4BqLnc.jpg HTTP/1.1" 304 0
+INFO 2024-05-23 12:34:13,608 basehttp "GET /media/images/manicure_N4BqLnc.jpg HTTP/1.1" 304 0
+WARNING 2024-05-23 12:34:13,856 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 12:34:13,856 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 12:34:13,858 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-23 12:34:13,858 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-23 12:34:13,862 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-23 12:34:13,862 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+INFO 2024-05-23 13:51:03,302 views Method create_review
+INFO 2024-05-23 13:51:03,330 views Method faq
+INFO 2024-05-23 13:51:03,361 views Method home
+INFO 2024-05-23 13:51:03,384 views Method news
+INFO 2024-05-23 13:51:03,412 views Method price_list
+INFO 2024-05-23 13:51:03,444 views Method privacy_policy
+INFO 2024-05-23 13:51:03,490 views Method reviews
+INFO 2024-05-23 13:51:03,514 views Method sandbox
+INFO 2024-05-23 13:53:02,420 views Method create_review
+INFO 2024-05-23 13:53:02,427 views Method faq
+INFO 2024-05-23 13:53:02,432 views Method home
+INFO 2024-05-23 13:53:02,443 views Method news
+INFO 2024-05-23 13:53:02,452 views Method price_list
+INFO 2024-05-23 13:53:02,457 views Method privacy_policy
+INFO 2024-05-23 13:53:02,469 views Method reviews
+INFO 2024-05-23 13:53:02,476 views Method sandbox
+INFO 2024-05-23 13:55:54,271 views Method create_review
+INFO 2024-05-23 13:55:54,276 views Method faq
+INFO 2024-05-23 13:55:54,282 views Method home
+INFO 2024-05-23 13:55:54,292 views Method news
+INFO 2024-05-23 13:55:54,298 views Method price_list
+INFO 2024-05-23 13:55:54,306 views Method privacy_policy
+INFO 2024-05-23 13:55:54,318 views Method reviews
+INFO 2024-05-23 13:55:54,324 views Method sandbox
+INFO 2024-05-23 13:57:41,028 views Method create_review
+INFO 2024-05-23 13:57:41,035 views Method faq
+INFO 2024-05-23 13:57:41,042 views Method home
+INFO 2024-05-23 13:57:41,051 views Method news
+INFO 2024-05-23 13:57:41,057 views Method price_list
+INFO 2024-05-23 13:57:41,064 views Method privacy_policy
+INFO 2024-05-23 13:57:41,079 views Method reviews
+INFO 2024-05-23 13:57:41,086 views Method sandbox
+INFO 2024-05-23 14:01:23,790 views Method create_review
+INFO 2024-05-23 14:01:23,798 views Method faq
+INFO 2024-05-23 14:01:23,805 views Method home
+INFO 2024-05-23 14:01:23,816 views Method news
+INFO 2024-05-23 14:01:23,824 views Method price_list
+INFO 2024-05-23 14:01:23,833 views Method privacy_policy
+INFO 2024-05-23 14:01:23,851 views Method reviews
+INFO 2024-05-23 14:01:23,859 views Method sandbox
+INFO 2024-05-23 14:03:59,453 views Method create_review
+INFO 2024-05-23 14:03:59,460 views Method faq
+INFO 2024-05-23 14:03:59,469 views Method home
+INFO 2024-05-23 14:03:59,480 views Method news
+INFO 2024-05-23 14:03:59,486 views Method price_list
+INFO 2024-05-23 14:03:59,494 views Method privacy_policy
+INFO 2024-05-23 14:03:59,510 views Method reviews
+INFO 2024-05-23 14:03:59,517 views Method sandbox
+INFO 2024-05-23 14:06:07,870 views Method create_review
+INFO 2024-05-23 14:06:07,882 views Method faq
+INFO 2024-05-23 14:06:07,892 views Method home
+INFO 2024-05-23 14:06:07,910 views Method news
+INFO 2024-05-23 14:06:07,921 views Method price_list
+INFO 2024-05-23 14:06:07,935 views Method privacy_policy
+INFO 2024-05-23 14:06:07,959 views Method reviews
+INFO 2024-05-23 14:06:07,971 views Method sandbox
+INFO 2024-05-23 14:07:04,088 views Method create_review
+INFO 2024-05-23 14:07:04,100 views Method faq
+INFO 2024-05-23 14:07:04,110 views Method home
+INFO 2024-05-23 14:07:04,126 views Method news
+INFO 2024-05-23 14:07:04,136 views Method price_list
+INFO 2024-05-23 14:07:04,154 views Method privacy_policy
+INFO 2024-05-23 14:07:04,180 views Method reviews
+INFO 2024-05-23 14:07:04,196 views Method sandbox
+INFO 2024-05-23 14:11:40,837 views Method home
+INFO 2024-05-23 14:11:40,847 views Method news
+INFO 2024-05-23 14:11:40,852 views Method price_list
+INFO 2024-05-23 14:15:38,734 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:15:38,734 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:15:44,377 views Method home
+INFO 2024-05-23 14:15:44,473 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-23 14:15:44,473 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-23 14:15:44,738 views Method home
+INFO 2024-05-23 14:15:44,757 basehttp "GET / HTTP/1.1" 200 2965
+INFO 2024-05-23 14:15:44,757 basehttp "GET / HTTP/1.1" 200 2965
+WARNING 2024-05-23 14:15:44,906 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-23 14:15:44,906 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-23 14:15:44,907 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 14:15:44,907 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 14:15:44,913 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-23 14:15:44,913 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-23 14:15:44,987 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 14:15:44,987 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 14:15:44,992 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-23 14:15:44,992 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-23 14:15:45,032 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-23 14:15:45,032 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+INFO 2024-05-23 14:15:55,162 basehttp "GET /services/service/3/ HTTP/1.1" 200 3015
+INFO 2024-05-23 14:15:55,162 basehttp "GET /services/service/3/ HTTP/1.1" 200 3015
+WARNING 2024-05-23 14:15:55,220 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-23 14:15:55,220 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1792
+WARNING 2024-05-23 14:15:55,224 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 14:15:55,224 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1813
+WARNING 2024-05-23 14:15:55,254 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-23 14:15:55,254 basehttp "GET /static/js/age.js HTTP/1.1" 404 1786
+WARNING 2024-05-23 14:15:55,309 log Not Found: /services/service/media/images/logo.jpg
+WARNING 2024-05-23 14:15:55,309 log Not Found: /services/service/media/images/logo.jpg
+WARNING 2024-05-23 14:15:55,309 basehttp "GET /services/service/media/images/logo.jpg HTTP/1.1" 404 5149
+WARNING 2024-05-23 14:15:55,309 basehttp "GET /services/service/media/images/logo.jpg HTTP/1.1" 404 5149
+INFO 2024-05-23 14:22:13,125 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:22:13,125 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:22:38,721 views Method faq
+INFO 2024-05-23 14:22:38,731 views Method home
+INFO 2024-05-23 14:22:38,752 views Method news
+INFO 2024-05-23 14:22:38,763 views Method price_list
+INFO 2024-05-23 14:23:17,622 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:23:17,622 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:24:15,310 views Method faq
+INFO 2024-05-23 14:24:15,315 views Method home
+INFO 2024-05-23 14:24:15,321 views Method news
+INFO 2024-05-23 14:24:15,326 views Method price_list
+INFO 2024-05-23 14:27:30,026 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:27:30,026 autoreload Watching for file changes with StatReloader
+INFO 2024-05-23 14:28:00,704 views Method faq
+INFO 2024-05-23 14:28:00,709 views Method home
+INFO 2024-05-23 14:28:00,715 views Method news
+INFO 2024-05-23 14:28:00,720 views Method price_list
+INFO 2024-05-23 14:29:05,458 views Method faq
+INFO 2024-05-23 14:29:05,465 views Method home
+INFO 2024-05-23 14:29:05,477 views Method news
+INFO 2024-05-23 14:29:05,485 views Method price_list
+INFO 2024-05-23 14:33:36,970 views Method faq
+INFO 2024-05-23 14:33:36,975 views Method home
+INFO 2024-05-23 14:33:36,985 views Method news
+INFO 2024-05-23 14:33:36,990 views Method price_list
+INFO 2024-05-23 14:34:45,096 views Method faq
+INFO 2024-05-23 14:34:45,106 views Method home
+INFO 2024-05-23 14:34:45,123 views Method news
+INFO 2024-05-23 14:34:45,131 views Method price_list
+INFO 2024-05-23 14:35:33,634 views Method faq
+INFO 2024-05-23 14:35:33,640 views Method home
+INFO 2024-05-23 14:35:33,650 views Method news
+INFO 2024-05-23 14:35:33,656 views Method price_list
+INFO 2024-05-23 14:38:02,320 views Method faq
+INFO 2024-05-23 14:38:02,330 views Method home
+INFO 2024-05-23 14:38:02,348 views Method news
+INFO 2024-05-23 14:38:02,359 views Method price_list
