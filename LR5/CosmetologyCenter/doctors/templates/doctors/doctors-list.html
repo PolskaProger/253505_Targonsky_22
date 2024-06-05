@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+
+<title>Наши сотрудники</title>
+{% endblock %}
+
+{% block main %}
+<h1>Наши сотрудники:</h1>
+
+<ul>
+    {% for doctor in doctors %}
+        <li class="doctor-short-details">
+           {% if doctor.image %}
+                <img src="{{ doctor.image.url }}" width="400em" height="400em"  alt="Фото сотрудника">
+            {% else %}
+                <img src="{% static 'default.jpg' %}" alt="Фото сотрудника">
+            {% endif %}
+                <h3>{{ doctor.last_name }} {{ doctor.first_name }}</h3>
+                <a href="{% url 'doctors:doctor-detail' doctor.id %}">Подробнее</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

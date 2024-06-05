@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+
+<title>TEST</title>
+{% endblock %}
+
+{% block main %}
+{%if user.is_authenticated%}
+<h3>Joke 4u - {{joke}} </h3>
+<a href="{{dog}}" target="_blank">Dog is here</a>
+{%endif%}
+{% endblock %}

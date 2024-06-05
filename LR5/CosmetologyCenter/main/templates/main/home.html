@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+
+<title>Главная страница</title>
+{% endblock %}
+
+
+{% block main %}
+<h1>Главная страница</h1>
+<img src="../media/images/logo.jpg" width="300em" height="200em">
+<h2>Последняя актуальная новость:</h2>
+
+<div class="news">
+    <h2>{{news.title}}</h2>
+    <h3>{{news.essence}}</h3>
+    <img src="{{news.photo.url}}" width="500em" height="300em">
+    <a href="{% url 'main:news' %}">Показать больше</a>
+</div>
+
+<h2>Многиее выбирают:</h2>
+
+<ul class="service-list">
+    {% for service in services %}
+    <div class="service-details">
+        <li>
+            <img src="{{ service.image.url }}">
+            <h3>{{ service.service_name }}</h3>
+            <a href="{% url 'services:service-detail' service.id %}">Подробнее</a>
+        </li>
+    </div>
+    {% endfor %}
+</ul>
+
+{% endblock %}
