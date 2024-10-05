@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>Наши сотрудники</title>
+<link rel="stylesheet" href="{% static 'styles/contacts.css' %}">
+{% endblock %}
+
+{% block main %}
+<h1>Наши сотрудники</h1>
+
+<div class="doctors-container">
+    {% for doctor in doctors %}
+        <div class="doctor-card">
+           {% if doctor.image %}
+                <img src="{{ doctor.image.url }}" alt="Фото сотрудника">
+            {% else %}
+                <img src="{% static 'default.jpg' %}" alt="Фото сотрудника">
+            {% endif %}
+            <div class="doctor-info">
+                <h3>{{ doctor.first_name }} {{ doctor.last_name }}</h3>
+                <p>Телефон: {{ doctor.phone }}</p>
+                <p>Email: {{ doctor.email }}</p>
+                <p>Категория:{{ doctor.category.all|join:", " }}</p>
+                <a href="{% url 'doctors:doctor-detail' doctor.id %}" class="details-link">Подробнее</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

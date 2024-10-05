@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>{{ doctor.first_name }} {{ doctor.last_name }}</title>
+<link rel="stylesheet" href="{% static 'styles/doctor-detail.css' %}">
+{% endblock %}
+
+{% block main %}
+<div class="doctor-details-container">
+    <div class="doctor-image">
+        {% if doctor.image %}
+            <img src="{{ doctor.image.url }}" alt="{{ doctor.first_name }} {{ doctor.last_name }}">
+        {% else %}
+            <img src="{% static 'default.jpg' %}" alt="Фото отсутствует">
+        {% endif %}
+    </div>
+    <div class="doctor-info">
+        <h1>{{ doctor.first_name }} {{ doctor.last_name }}</h1>
+        <p><strong>Категория:</strong> {{ doctor.category.all|join:", " }}</p>
+        <p><strong>Опыт работы:</strong> {{ doctor.work_experience }} лет</p>
+        <p><strong>Телефон:</strong> {{ doctor.phone }}</p>
+        <p><strong>Email:</strong> {{ doctor.email }}</p>
+    </div>
+</div>
+{% endblock %}

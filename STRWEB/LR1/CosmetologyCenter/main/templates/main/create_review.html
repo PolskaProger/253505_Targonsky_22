@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/review-form.css' %}">
+<title>Оставить отзыв</title>
+{% endblock %}
+
+{% block main %}
+<form method="POST" enctype="multipart/form-data" class="review-form">
+    {% csrf_token %}
+    {% for f in form %}
+    <div class="form-group">
+        <label for="{{ f.id_for_label }}">{{ f.label }}:</label>
+        {{ f }}
+        <div class="error-message">{{ f.errors }}</div>
+    </div>
+    {% endfor %}
+</form>
+
+{% endblock %}

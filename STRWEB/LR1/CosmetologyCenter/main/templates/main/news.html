@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<title>Новости</title>
+{% endblock %}
+
+{% block main %}
+<section class="news-container">
+  {% for new in news %}
+  <article class="news-article">
+    <h2>{{ new.title }}</h2>
+    <div class="short-description">
+      <h4>{{ new.essence }}</h4>
+    </div>
+    <a href="{% url 'main:news_detail' new.id %}">
+      <img src="{{ new.photo.url }}" alt="News Image">
+    </a>
+    <a href="{% url 'main:news_detail' new.id %}">
+      <h2>Читать далее</h2>
+    </a>
+  </article>
+  {% endfor %}
+</section>
+<div style="margin-bottom: 30px;"></div>
+{% endblock %}
