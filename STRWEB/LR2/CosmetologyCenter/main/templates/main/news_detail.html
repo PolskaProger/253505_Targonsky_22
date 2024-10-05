@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>{{ news_item.title }}</title>
+{% endblock %}
+
+{% block main %}
+<article>
+    <h1>{{ news_item.title }}</h1>
+    <img src="{{ news_item.photo.url }}" width="500em" height="300em">
+    <p>{{ news_item.description }}</p>
+</article>
+<div style="margin-bottom: 30px;"></div>
+<a href="{% url 'main:news' %}">Назад к новостям</a>
+{% endblock %}

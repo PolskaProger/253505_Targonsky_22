@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/statistics.css' %}">
+    <title>Отчет по статистике</title>
+</head>
+{% endblock %}
+
+{% block main %}
+<div class="statistics-content">
+    <h1>Отчет по статистике</h1>
+
+    <div class="stat-item">
+        <h2>Средний возраст клиентов:</h2>
+        <p class="highlight">{{ average_age }}</p>
+    </div>
+
+    <div class="stat-item">
+        <h2>Медианный возраст клиентов:</h2>
+        <p class="highlight">{{ median_age }}</p>
+    </div>
+
+    <div class="stat-item">
+        <h2>Распределение сумм продаж:</h2>
+        <img src="data:image/png;base64,{{ image_base64_hist }}" alt="Распределение сумм продаж" class="histogram-image">
+    </div>
+
+    <a href="{% url 'main:home' %}" class="back-home-button">Вернуться на главную</a>
+</div>
+{% endblock %}

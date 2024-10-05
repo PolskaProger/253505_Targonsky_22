@@ -1,0 +1,72 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        {% block head %}{% endblock %}
+
+        <link rel="icon" href="../media/images/logo.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="progress"></div>
+        <aside>
+            <ul>
+                <li><a href="{% url 'main:home' %}">Главная</a></li>
+                <li><a href="{% url 'doctors:doctors-list' %}">Сотрудники</a></li>
+                <li><a href="{% url 'services:services-list' %}">Услуги</a></li>
+                <li><a href="{% url 'main:price-list' %}">Прайс-лист</a></li>
+                <li><a href="{% url 'main:about' %}">О компании</a></li>
+                <li><a href="{% url 'main:privacy_policy' %}">Политика конфиденциальности</a></li>
+                <li><a href="{% url 'main:news' %}">Новости</a></li>
+                <li><a href="{% url 'cart:cart_details' %}">Корзина</a></li>
+                <li><a href="{% url 'main:promotional_code' %}">Промокоды</a></li>
+                <li><a href="{% url 'main:vacancies' %}">Вакансии</a></li>
+                {% if user.is_authenticated %}
+                                <li><a href="{% url 'stats:report' %}" onclick="return checkAge(event)">Статистика</a></li>
+                <li><a href="{% url 'appointments:appointment_list_for_user' %}">Записи</a></li>
+                <li><a href="{% url 'main:rewiews' %}">Отзывы</a></li>
+                <li><a href="{% url 'main:sandbox' %}">API/HTML-TEST</a> </li>
+                <li><a href="{% url 'doctors:logout' %}">Выйти</a></li>
+                {% else %}
+                <li><a href="{% url 'doctors:login'%}?next={{request.path}}">Войти</a></li>
+                {% endif %}
+
+                <div id ="countdown"></div>
+            </ul>
+        </aside>
+
+        <main class="main">
+                <div id="preloader">
+                    <div class="loader">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <p class="company-name">So Cute</p>
+                </div>
+            {% block main %} {% endblock %}
+        </main>
+
+        <footer>
+            <div>
+                <p>&copy; 2024 Косметологический центер <span>"SoCute"</span></p>
+                <nav>
+                    <ul>
+                        <li><a href="{%url 'main:FAQ'%}">Словарь терминов и понятий</a></li>
+                        <li><a href="{% url 'main:privacy_policy'%}">Политика конфиденциальности</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+         <script src="{% static 'js/progress_bar.js'%}"></script>
+         <script src="{% static 'js/timer.js'%}"></script>
+         <script src="{% static 'js/age.js'%}"></script>
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>Отзывы</title>
+<link rel="stylesheet" href="{% static 'styles/reviews.css' %}">
+{% endblock %}
+
+{% block main %}
+<div class="main-content">
+    <div class="review-list">
+        <h1>Отзывы</h1>
+        {% for r in reviews %}
+        <div class="review">
+            <h2 class="review-author">{{ r.author }}</h2>
+            <h3 class="review-text">{{ r.text }}</h3>
+            <div class="review-meta">
+                <h4 class="review-rating">Оценка: {{ r.rating }}</h4>
+                <h4 class="review-date">Добавлен: {{ r.date_added }}</h4>
+            </div>
+        </div>
+        <hr class="review-divider">
+
+        {% endfor %}
+        <input type="submit" value="Оставить отзыв" class="submit-button">
+    </div>
+</div>
+{% endblock %}

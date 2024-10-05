@@ -1,0 +1,180 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<meta charset="UTF-8">
+<meta name="description" content="Описание страницы для поисковых систем">
+<meta name="keywords" content="Ключевые слова, SEO, Django">
+<meta name="author" content="Dmitry">
+<title>TEST</title>
+{% endblock %}
+
+{% block main %}
+<main itemscope itemtype="https://schema.org/WebPage">
+    {% if user.is_authenticated %}
+    <section itemscope itemtype="https://schema.org/CreativeWork">
+        <h1 itemprop="headline">Joke for you</h1>
+        <p itemprop="text">{{ joke }}</p>
+        <figure>
+            <a href="{{ dog }}" target="_blank">
+                <img src="{{ dog }}" alt="Random Dog Image" width="300" height="200">
+                <figcaption>Нажмите, чтобы увидеть изображение собаки</figcaption>
+            </a>
+        </figure>
+    </section>
+    {% endif %}
+
+    <article itemscope itemtype="https://schema.org/Article">
+        <header>
+            <h2 itemprop="headline">Пример семантического выделения текста</h2>
+        </header>
+        <p>Это пример текста с <strong>жирным выделением</strong>, <em>курсивом</em>, и <mark>выделением маркером</mark>.</p>
+        <p>Аббревиатура: <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+        <p>Цитата: <q itemprop="quote">Быть или не быть, вот в чем вопрос.</q></p>
+        <p>Определение: <dfn>HTML</dfn> — язык гипертекстовой разметки.</p>
+        <p>Дата и время публикации: <time datetime="2023-10-05T14:48:00+00:00" itemprop="datePublished"> 5 октября 2023</time></p>
+        <pre>
+Это пример
+    листинга
+        с сохранением
+    пробелов и переносов строк.
+        </pre>
+        <p>Текст в виде четверостишия:</p>
+        <p>
+            Рано утром в туманной долине<br>
+            Солнце встало над горной вершиной.<br>
+            Птицы поют, просыпаясь вдали,<br>
+            Новый день начинает свой путь.
+        </p>
+    </article>
+
+    <nav>
+        <h2>Навигация</h2>
+        <ul>
+            <li><a href="#section1">Раздел 1</a></li>
+            <li><a href="#section2">Раздел 2</a></li>
+            <li><a href="#section3">Раздел 3</a></li>
+        </ul>
+    </nav>
+
+    <h2>Микроданные</h2>
+    <div itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name"><strong>Андрей Фуфелшмиц</strong></span>
+        <span itemprop="jobTitle">Менеджер</span>
+        <span itemprop="telephone"><small>+7 (495) 123-4567</small></span>
+        <p></p>
+        <img itemprop="image" src="../media/images/Андрей.jfif" alt="Фото Андрея Фуфелшмица">
+    </div>
+
+
+    <section id="section1">
+        <h2>Раздел 1</h2>
+        <p>Содержимое раздела 1.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Раздел 2</h2>
+        <p>Содержимое раздела 2.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Раздел 3</h2>
+        <p>Содержимое раздела 3.</p>
+    </section>
+
+    <aside>
+        <h2>Боковая информация</h2>
+        <p>Это боковая панель с дополнительной информацией.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 Ваш сайт. Все права защищены.</p>
+    </footer>
+
+    <h2>Список элементов</h2>
+    <ul>
+        <li>Элемент списка 1</li>
+        <li>Элемент списка 2</li>
+        <li>Элемент списка 3</li>
+    </ul>
+
+    <h2>Таблица данных</h2>
+    <table>
+        <caption>Таблица с данными</caption>
+        <thead>
+            <tr>
+                <th id="col1">Колонка 1</th>
+                <th id="col2">Колонка 2</th>
+                <th id="col3">Колонка 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="col1">Данные 1</td>
+                <td headers="col2" rowspan="2">Объединенная ячейка</td>
+                <td headers="col3">Данные 3</td>
+            </tr>
+            <tr>
+                <td headers="col1">Данные 4</td>
+                <td headers="col3">Данные 6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Форма ввода данных</h2>
+    <form action="/submit/" method="post" itemscope itemtype="https://schema.org/Action">
+        {% csrf_token %}
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required contenteditable="true">
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required spellcheck="false">
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="date">Дата рождения:</label>
+        <input type="date" id="date" name="date_of_birth">
+
+        <label for="color">Выберите любимый цвет:</label>
+        <input type="color" id="color" name="favorite_color">
+
+        <label for="country">Страна:</label>
+        <select id="country" name="country">
+            <option value="ru">Россия</option>
+            <option value="us">США</option>
+            <option value="uk">Великобритания</option>
+            <option value="by">Беларусь</option>
+        </select>
+
+        <input type="submit" value="Отправить">
+    </form>
+
+    <h2>Медиа контент</h2>
+    <figure>
+        <img src="../media/images/Piwo.jpg" alt="Пример изображения" style="max-width:100%; height:auto;">
+        <figcaption>PIWO PIWO PIWO</figcaption>
+    </figure>
+
+    <h3>Видео</h3>
+    <video width="320" height="240" controls>
+        <source src="../media/videos/Piwo.mp4">
+        Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+
+    <h3>Аудио</h3>
+    <audio controls>
+        <source src="../media/audio/Piwo.mp3">
+        Ваш браузер не поддерживает воспроизведение аудио.
+    </audio>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3SinWd80yFY?si=nkZ_hH70PwyJ3vXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Скачать документ</h2>
+    <p>Скачать наше <a href="../media/docs/test.pdf" download>руководство</a>.</p>
+
+    <h2>Глобальные атрибуты и семантические элементы</h2>
+    <div id="global-attributes" class="content-section" data-info="Пример глобальных атрибутов" lang="ru" dir="ltr">
+        <p lang="en">This is a paragraph with a <span style="color:red;">global attribute example</span>.</p>
+    </div>
+</main>
+{% endblock %}

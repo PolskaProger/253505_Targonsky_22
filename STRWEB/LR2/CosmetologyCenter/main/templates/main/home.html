@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+
+<title>Главная страница</title>
+{% endblock %}
+
+
+{% block main %}
+<h1>Главная страница</h1>
+<h1 class="company-title">SoCute</h1>
+<img src="../media/images/logo.jpg" width="300em" height="200em">
+<h2>Наши партнёры:</h2>
+<ul class="partners-list">
+    {% for partner in partners %}
+    <li>
+        <a href="{{ partner.website }}" target="_blank">
+            <img src="{{ partner.logo.url}}" alt="{{ partner.name }}" width="300em" height="200em">
+        </a>
+    </li> {% endfor %}
+</ul>
+<h2>Реклама:</h2>
+<img src="../media/images/advert.jpg" alt="Реклама" width="500em" height="300em">
+<h2>Последняя актуальная новость:</h2>
+
+<div class="news">
+    <h2>{{news.title}}</h2>
+    <h3>{{news.essence}}</h3>
+    <img src="{{news.photo.url}}" width="500em" height="300em">
+    <a href="{% url 'main:news' %}">Показать больше</a>
+</div>
+
+<h2>Многиее выбирают:</h2>
+
+<ul class="service-list">
+    {% for service in services %}
+    <div class="service-details">
+        <li>
+            <img src="{{ service.image.url }}" width="500em" height="300em">
+            <h3>{{ service.service_name }}</h3>
+            <a href="{% url 'services:service-detail' service.id %}">Подробнее</a>
+        </li>
+    </div>
+    {% endfor %}
+</ul>
+
+{% endblock %}

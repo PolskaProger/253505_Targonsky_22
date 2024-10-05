@@ -1,0 +1,950 @@
+/* Фиксированная навигация при прокрутке */
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: purple;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+aside ul li a:hover {
+    background-color: #fff;
+    color: #2E0249;
+    border-color: black; /* Темно-фиолетовая окантовка */
+}
+
+/* Круглые блоки для компаний-партнеров */
+.partners-list li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Круглая форма */
+    overflow: hidden;
+    background-color: #E0E0E0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+    text-align: center;
+}
+
+.partners-list li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Увеличение изображения до границ круга */
+}
+
+/* Шрифт и кернинг для названия компании */
+.company-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    color: #2E0249;
+    letter-spacing: 0.05em; /* Настройка кернинга */
+    text-transform: uppercase; /* Верхний регистр */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Позиционирование для последней актуальной новости */
+.news {
+    position: relative;
+    margin: 40px 0;
+    padding: 20px;
+    border: 2px solid #2E0249;
+    background-color: #F9F9F9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для новости */
+}
+
+.news img {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Стили для кнопки "Показать больше" */
+.news a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2E0249;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.news a:hover {
+    background-color: #fff;
+    color: #2E0249;
+    border: 2px solid #2E0249;
+}
+
+/* Каталог услуг (сетка) */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Сетка с динамическим количеством колонок */
+    gap: 20px;
+}
+
+.service-details {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border: 2px solid #2E0249;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-details h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Основные стили для страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #FFFFFF, pink);
+    margin-left: 220px; /* Оставляем место для фиксированного меню */
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2E0249;
+}
+    /* Стили для футера */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1C1C1E;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    z-index: 999; /* чтобы футер всегда был сверху */
+}
+
+main {
+    margin-bottom: 80px; /* Задаем отступ, чтобы контент не перекрывался футером */
+}
+
+
+/* Стили для навигации в футере */
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #FF66C4; /* Розовый */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+/* При наведении меняется цвет */
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+/* Стили для текста в футере */
+footer p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Шрифт для названия компании */
+footer span {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-variant: small-caps;
+    color: #FF66C4; /* Розовый */
+}
+
+/* Прелоадер */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    animation: fadeOut 1s ease forwards; /* Анимация исчезновения */
+    animation-delay: 0.1s; /* Начинает исчезать через 1 секунду */
+}
+
+.loader {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.loader .line {
+    width: 20px;
+    height: 80px;
+    background-color: #FF66C4;
+    margin: 0 10px;
+    animation: growShrink 1s infinite ease-in-out;
+}
+
+.loader .line:nth-child(1) {
+    background-color: #FF66C4;
+    animation-delay: 0.1s;
+}
+
+.loader .line:nth-child(2) {
+    background-color: #C154C1;
+    animation-delay: 0.2s;
+}
+
+.loader .line:nth-child(3) {
+    background-color: #FF47CA;
+    animation-delay: 0.3s;
+}
+
+.loader .line:nth-child(4) {
+    background-color: #7851A9;
+    animation-delay: 0.4s;
+}
+
+.loader .line:nth-child(5) {
+    background-color: purple;
+    animation-delay: 0.5s;
+}
+
+@keyframes growShrink {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.5);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Стили для названия компании */
+.company-name {
+    font-size: 24px;
+    color: purple;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.company-title {
+    text-align: center;
+    font-size: 36px;
+    color: #FF66C4;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 3s;
+}
+
+/* Трансформация логотипа при наведении */
+#about img:hover {
+    transform: scale(1.1); /* Увеличение логотипа */
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    color: #FF66C4; /* Выделение заголовков ярким цветом */
+    text-transform: uppercase; /* Верхний регистр для выделения */
+    letter-spacing: 0.05em; /* Увеличение расстояния между буквами */
+}
+
+/* Выделение важных параграфов */
+strong {
+    color: #2E0249; /* Темно-фиолетовый цвет для выделенных слов */
+    font-weight: bold;
+}
+
+/* Выделение цитат или ключевых моментов */
+p.important {
+    background-color: #FFEBF6; /* Светло-розовый фон для выделения */
+    border-left: 5px solid #FF66C4; /* Вертикальная полоса для акцента */
+    padding: 10px;
+}
+
+/* Стили для исторических дат */
+#history h2 {
+    font-size: 1.8em;
+    color: #FF66C4; /* Цвет для выделения дат */
+    margin-top: 20px;
+}
+
+#history p {
+    font-size: 1.1em; /* Чуть крупнее для важности */
+    color: #2E0249;
+    line-height: 1.6;
+}
+
+/* Выделение ссылок */
+a {
+    color: #FF66C4;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #2E0249;
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+/* Кнопка "Связаться с нами" */
+#about a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF66C4;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#about a:hover {
+    background-color: #2E0249;
+    color: #FFF;
+}
+
+/* Центрирование видео и изображений */
+iframe, img {
+    border: 2px solid #FF66C4; /* Добавляем рамку для выделения */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    transition: transform 0.3s ease;
+}
+
+iframe:hover, img:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Стили для контейнера сертификата */
+.certificate {
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  background-image: url('/path/to/background.png'); /* Путь к фоновому изображению */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+  border: 5px solid #FF0000; /* Внешняя граница */
+  border-image: url('/path/to/border-image.png') 30 round; /* Вставить изображение границы */
+}
+
+/* Заголовки и основной текст */
+.certificate-header h2 {
+  font-size: 28px;
+  color: #FF0000;
+  margin: 0;
+}
+
+.certificate-header h3 {
+  font-size: 36px;
+  color: #FF0000;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.certificate-header p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.certificate-content {
+  margin: 30px 0;
+}
+
+.certificate-content p {
+  font-size: 22px;
+  color: #333;
+}
+
+.certificate-content .date {
+  font-size: 18px;
+}
+
+.certificate-footer {
+  margin-top: 50px;
+}
+
+.certificate-footer p {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Многоколоночный макет для статей */
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Гибкое количество колонок */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Стили для статьи */
+.news-article {
+    border: 2px solid #2E0249;
+    padding: 20px;
+    background-color: #F9F9F9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Обрезка текста с использованием overflow */
+.short-description {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Многоточие, если текст не помещается */
+    white-space: nowrap;
+}
+
+/* Картинка, которая будет корректно вписываться в колонку */
+.news-article img {
+    width: 100%; /* Занимает всю ширину колонки */
+    height: auto; /* Автоматическая корректировка высоты */
+    object-fit: cover; /* Картинка масштабируется по высоте и ширине, сохраняя пропорции */
+    border-radius: 8px; /* Скругленные углы для картинки */
+}
+
+.faq-content details {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-content summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Стиль раскрытых вопросов */
+.faq-content details[open] summary {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.faq-content details p {
+    padding: 10px;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+details summary:hover {
+    background-color: #dcdcdc;
+}
+
+/* Дополнительная информация о дате */
+.faq-content details p:last-child {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Контейнер для карточек сотрудников */
+.doctors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Оформление карточек сотрудников */
+.doctor-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Фото сотрудника */
+.doctor-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Информация о сотруднике */
+.doctor-info {
+    padding: 10px;
+}
+
+.doctor-info h3 {
+    margin: 10px 0;
+    color: #34495E;
+}
+
+.doctor-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #777;
+}
+
+/* Контейнер для деталей о докторе */
+.doctor-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для изображения доктора */
+.doctor-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для информации о докторе */
+.doctor-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.doctor-info h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #34495E;
+}
+
+.doctor-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.doctor-info strong {
+    color: #2C3E50;
+}
+
+/* Ссылка на полную информацию о сотруднике */
+.details-link {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.details-link:hover {
+    background-color: #2980b9;
+}
+
+.vacancies-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.vacancy-item {
+    width: 48%; /* Ширина каждого блока вакансии */
+    float: left; /* Плавающие блоки */
+    margin: 1%; /* Отступы между блоками */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.vacancy-details h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.vacancy-details h4 {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.clear {
+    clear: both; /* Очищение float, чтобы следующие элементы не "заползали" под плавающие блоки */
+}
+
+/* Кнопка для добавления отзыва */
+.leave-review-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.leave-review-button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для отзывов */
+.review-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Настройка шрифтов для компонентов */
+.review-author {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #34495E;
+    font-style: italic; /* Ключевое слово для наклонного шрифта */
+}
+
+.review-text {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-style: oblique; /* Другой стиль наклонного шрифта */
+}
+
+.review-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.review-meta h4 {
+    font-variant: small-caps; /* Ключевое слово для капительного шрифта */
+    color: #777;
+}
+
+/* Стили для псевдоклассов */
+.leave-review-button:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.leave-review-button:active {
+    background-color: #21618C;
+    transform: scale(0.98); /* Эффект при нажатии */
+}
+
+/* Горизонтальная линия между отзывами */
+.review-divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Псевдоклассы для интерактивных элементов */
+.review-author:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Основные стили для формы */
+.review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Оформление для текстовых полей, текстовых областей и селекторов */
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    resize: vertical; /* Разрешаем изменять размер текстовой области только по вертикали */
+}
+
+/* Псевдоклассы для интерактивности */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+    border-color: #3498db; /* Смена цвета рамки при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+}
+
+/* Стили для невалидных полей */
+input:invalid, textarea:invalid, select:invalid {
+    border-color: #e74c3c; /* Красная рамка для невалидных полей */
+}
+
+/* Ошибки валидации */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Стили для кнопки отправки */
+.submit-button {
+    display: inline-block;
+    background-color: #2E0249;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #3498db;
+}
+
+.submit-button:focus {
+    outline: 2px solid #2E0249;
+    outline-offset: 2px;
+}
+
+/* Основные стили для страницы статистики */
+.statistics-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+
+/* Стили для выделенных числовых данных */
+.highlight {
+    font-size: 2em;
+    font-weight: bold;
+    color: #e74c3c;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Стили для гистограммы */
+.histogram-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Кнопка возврата */
+.back-home-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: #2980b9;
+}
+
+/* Основные стили для страницы */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* CSS Grid для услуг */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Динамическая сетка */
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Карточка услуги */
+.service-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Плавный эффект поднятия карточки при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
+}
+
+/* Внутренние элементы карточки */
+.card-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Скругленные углы сверху */
+}
+
+.card-item h3 {
+    font-size: 1.5em;
+    color: #2E0249;
+    margin: 10px 0;
+}
+
+.card-item p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+/* Стили для ссылки "Подробнее" */
+.service-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link:hover {
+    background-color: #2980b9;
+}
+
+/* Медиа-запрос для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    aside ul {
+        flex-direction: column;
+    }
+
+    aside ul li {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    footer nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
