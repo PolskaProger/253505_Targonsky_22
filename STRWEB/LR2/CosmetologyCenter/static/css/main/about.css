@@ -1,0 +1,160 @@
+/* Основные стили для страницы "О компании" */
+#about {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Стили заголовков */
+#about h1, #about h2 {
+    color: #FF66C4;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+#about h1 {
+    font-size: 2.5em;
+}
+
+#about h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+/* Стили для абзацев */
+#about p {
+    font-size: 1.1em;
+    color: #2E0249;
+    margin-bottom: 15px;
+}
+
+/* Первую букву абзаца выделить большим размером */
+#about p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FF66C4;
+}
+
+/* Стили для списка */
+#about ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#about ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+/* Маркер для списка в виде символа юникода */
+#about ul li::before {
+    content: "\2713"; /* Галочка как маркер */
+    position: absolute;
+    left: 0;
+    color: #FF66C4;
+}
+
+/* Стили для ссылок */
+#about a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#about a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+/* Стили для видео */
+iframe {
+    border: 2px solid #FF66C4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для логотипа */
+#about img {
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для секции истории */
+#history {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border: 2px solid #2E0249;
+    border-radius: 8px;
+}
+
+/* Стили для сертификата */
+#sertificate {
+    background: linear-gradient(135deg, #FF66C4 25%, #D100D1 50%, #2E0249 75%);
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Стили для текста в секции сертификата */
+#sertificate p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Стили для контактов */
+#contacts {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовков контактов */
+#contacts h2 {
+    color: #FF66C4;
+    margin-bottom: 15px;
+}
+
+/* Стили для списков контактов */
+#contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacts ul li {
+    margin-bottom: 10px;
+}
+
+/* Центрирование видео */
+iframe, img {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    #about, #history, #contacts, #sertificate {
+        padding: 15px;
+    }
+
+    #about h1 {
+        font-size: 2em;
+    }
+
+    #about h2 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,102 @@
+/* Основные стили для страницы отзывов */
+.main-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #2E0249;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка */
+.review-list h1 {
+    color: #FF66C4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для каждого отзыва */
+.review {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #2E0249;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для автора отзыва */
+.review-author {
+    font-size: 1.4em;
+    color: #2E0249;
+    margin-bottom: 5px;
+}
+
+/* Стили для текста отзыва */
+.review-text {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Стили для мета-информации */
+.review-meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Стили для оценки и даты добавления */
+.review-rating, .review-date {
+    margin: 5px 0;
+}
+
+/* Разделитель отзывов */
+.review-divider {
+    border: 0;
+    height: 1px;
+    background-color: #2E0249;
+    margin: 20px 0;
+}
+
+/* Стили для кнопки "Оставить отзыв" */
+.submit-button {
+    display: block;
+    width: 100%;
+    background-color: #2E0249;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Псевдоклассы для кнопки */
+.submit-button:hover {
+    background-color: #FF66C4;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .main-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .review-author {
+        font-size: 1.2em;
+    }
+
+    .review-text {
+        font-size: 1em;
+    }
+
+    .submit-button {
+        font-size: 1em;
+    }
+}

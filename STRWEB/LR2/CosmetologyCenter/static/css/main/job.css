@@ -1,0 +1,47 @@
+/* Стили для заголовка */
+.vacancies-content h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #FF66C4;
+    margin-bottom: 40px;
+}
+
+/* Стили для каждого элемента вакансии */
+.vacancy-item {
+    width: 45%;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border: 2px solid #2E0249;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.vacancy-item:hover {
+    transform: scale(1.05); /* Увеличение на 5% */
+}
+/* Стили для текста вакансии */
+.vacancy-details h3 {
+    color: #2E0249;
+    font-size: 1.8em;
+    margin: 0 0 10px 0;
+}
+.vacancy-details h4 {
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Стили для очистки float */
+.clear {
+    clear: both;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .vacancy-item {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+}

@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static 'styles/review-form.css' %}">
+<link rel="stylesheet" href="{% static 'styles/main/create_review.css' %}">
 <title>Оставить отзыв</title>
 {% endblock %}
 
@@ -17,6 +17,7 @@
         <div class="error-message">{{ f.errors }}</div>
     </div>
     {% endfor %}
+    <input type="submit" value="Оставить отзыв" class="review-form">
 </form>
 
 {% endblock %}

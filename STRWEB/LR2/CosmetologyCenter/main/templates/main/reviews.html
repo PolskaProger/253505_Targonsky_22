@@ -4,7 +4,7 @@
 
 {% block head %}
 <title>Отзывы</title>
-<link rel="stylesheet" href="{% static 'styles/reviews.css' %}">
+<link rel="stylesheet" href="{% static 'css/main/reviews.css' %}">
 {% endblock %}
 
 {% block main %}
@@ -23,7 +23,7 @@
         <hr class="review-divider">
 
         {% endfor %}
-        <input type="submit" value="Оставить отзыв" class="submit-button">
+        <a href="{% url 'main:create_rewiew' %}" class="submit-button">Оставить отзыв</a>
     </div>
 </div>
 {% endblock %}

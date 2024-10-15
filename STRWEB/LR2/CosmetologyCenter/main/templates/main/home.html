@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block head %}
-
+<link rel="stylesheet" href="{% static 'css/main/home.css' %}">
 <title>Главная страница</title>
 {% endblock %}
 
@@ -11,7 +11,20 @@
 {% block main %}
 <h1>Главная страница</h1>
 <h1 class="company-title">SoCute</h1>
-<img src="../media/images/logo.jpg" width="300em" height="200em">
+<article id="scene">
+    <img id="brush" src="media/images/brush.png" alt="image">
+    <img id="face" src="media/images/face.png" alt="image">
+    <img id="old_eyes" src="media/images/old_eyes.png" alt="image">
+    <img id="new_eyes" src="media/images/new_eyes.png" alt="image">
+    <img id="old_eyebrows" src="media/images/old_eyebrows.png" alt="image">
+    <img id="new_eyebrows" src="media/images/new_eyebrows.png" alt="image">
+    <img id="cheeks" src="media/images/cheeks.png" alt="image">
+    <img id="new_nose" src="media/images/new_nose.png" alt="image">
+    <img id="old_nose" src="media/images/old_nose.png" alt="image">
+    <img id="old_mouse" src="media/images/old_mouse.png" alt="image">
+    <img id="new_mouse" src="media/images/new_mouse.png" alt="image">
+    <h1>SoCute</h1>
+</article>
 <h2>Наши партнёры:</h2>
 <ul class="partners-list">
     {% for partner in partners %}
@@ -45,5 +58,6 @@
     </div>
     {% endfor %}
 </ul>
+
 
 {% endblock %}
