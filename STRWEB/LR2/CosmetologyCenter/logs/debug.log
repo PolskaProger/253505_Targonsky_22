@@ -23036,3 +23036,260 @@ WARNING 2024-10-15 17:53:30,581 basehttp "GET /static/js/timer.js HTTP/1.1" 404 
 WARNING 2024-10-15 17:53:30,581 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
 WARNING 2024-10-15 17:53:30,649 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
 WARNING 2024-10-15 17:53:30,649 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:33:05,345 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:33:05,345 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:34:42,515 views Method home
+INFO 2024-10-15 20:34:42,654 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:34:42,654 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:34:42,700 views Method home
+INFO 2024-10-15 20:34:42,725 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:34:42,725 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:34:42,800 basehttp "GET /static/css/main/home.css HTTP/1.1" 304 0
+INFO 2024-10-15 20:34:42,800 basehttp "GET /static/css/main/home.css HTTP/1.1" 304 0
+WARNING 2024-10-15 20:34:42,817 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:34:42,817 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:34:42,879 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:34:42,879 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:34:42,919 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:34:42,919 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:34:42,970 basehttp "GET /static/css/style.css HTTP/1.1" 200 29268
+INFO 2024-10-15 20:34:42,970 basehttp "GET /static/css/style.css HTTP/1.1" 200 29268
+WARNING 2024-10-15 20:34:44,418 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:34:44,418 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:34:44,476 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:34:44,476 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:34:44,630 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:34:44,630 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:34:48,382 views Method home
+INFO 2024-10-15 20:34:48,409 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:34:48,409 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:34:48,439 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:34:48,439 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:34:48,440 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:34:48,440 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:34:48,473 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:34:48,473 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:35:24,322 views Method home
+INFO 2024-10-15 20:35:24,348 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:35:24,348 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:35:24,384 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:35:24,384 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:35:24,390 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:35:24,390 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:35:24,414 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:35:24,414 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:35:26,243 basehttp "GET /about/ HTTP/1.1" 200 8673
+INFO 2024-10-15 20:35:26,243 basehttp "GET /about/ HTTP/1.1" 200 8673
+WARNING 2024-10-15 20:35:26,265 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:35:26,265 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+INFO 2024-10-15 20:35:26,280 basehttp "GET /static/css/main/about.css HTTP/1.1" 200 3347
+INFO 2024-10-15 20:35:26,280 basehttp "GET /static/css/main/about.css HTTP/1.1" 200 3347
+WARNING 2024-10-15 20:35:26,318 log Not Found: /media/images/border.png.png
+WARNING 2024-10-15 20:35:26,318 log Not Found: /media/images/border.png.png
+WARNING 2024-10-15 20:35:26,319 basehttp "GET /media/images/border.png.png HTTP/1.1" 404 6737
+WARNING 2024-10-15 20:35:26,319 basehttp "GET /media/images/border.png.png HTTP/1.1" 404 6737
+WARNING 2024-10-15 20:35:26,322 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:35:26,322 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:35:26,331 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:35:26,331 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:35:26,351 basehttp "GET /media/images/fon.jfif HTTP/1.1" 200 4925
+INFO 2024-10-15 20:35:26,351 basehttp "GET /media/images/fon.jfif HTTP/1.1" 200 4925
+INFO 2024-10-15 20:36:07,156 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:36:07,156 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:36:49,695 views Method home
+INFO 2024-10-15 20:36:49,876 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:36:49,876 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:36:50,025 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:36:50,025 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:36:50,047 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:36:50,047 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:36:50,221 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:36:50,221 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:37:46,753 views Method home
+INFO 2024-10-15 20:37:46,774 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:37:46,774 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:37:46,803 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:37:46,803 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:37:46,804 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:37:46,804 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:37:46,813 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:37:46,813 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:38:32,137 views Method home
+INFO 2024-10-15 20:38:32,157 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:38:32,157 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:38:32,182 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:38:32,182 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:38:32,194 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:38:32,194 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:38:32,224 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:38:32,224 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:40:15,416 views Method home
+INFO 2024-10-15 20:40:15,433 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:40:15,433 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:40:15,462 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:15,462 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:15,472 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:40:15,472 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:40:15,485 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:40:15,485 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:40:16,605 views Method home
+INFO 2024-10-15 20:40:16,626 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:40:16,626 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:40:16,696 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:16,696 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:16,696 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:40:16,696 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:40:16,753 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:40:16,753 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:40:34,280 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:40:34,280 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:40:36,521 views Method home
+INFO 2024-10-15 20:40:36,568 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:40:36,568 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:40:36,658 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:40:36,658 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:40:36,668 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:36,668 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:36,785 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:40:36,785 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:40:46,857 views Method home
+INFO 2024-10-15 20:40:46,870 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:40:46,870 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:40:47,086 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:47,086 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:40:47,175 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:40:47,175 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:40:47,254 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:40:47,254 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:42:12,409 views Method home
+INFO 2024-10-15 20:42:12,434 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:42:12,434 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:42:12,593 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:42:12,593 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:42:12,609 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:42:12,609 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:42:12,612 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:42:12,612 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+INFO 2024-10-15 20:43:15,436 views Method home
+INFO 2024-10-15 20:43:15,452 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:43:15,452 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:43:15,632 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:43:15,632 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:43:15,650 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:43:15,650 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:43:15,695 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:43:15,695 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:44:33,141 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:44:33,141 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:44:39,052 views Method home
+INFO 2024-10-15 20:44:39,234 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:44:39,234 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:44:39,297 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:44:39,297 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:44:39,304 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:44:39,304 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:44:39,322 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:44:39,322 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:45:45,789 views Method home
+INFO 2024-10-15 20:45:45,805 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:45:45,805 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:45:46,011 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:45:46,011 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:45:46,074 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:45:46,074 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:45:46,288 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:45:46,288 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:46:06,712 views Method home
+INFO 2024-10-15 20:46:06,737 basehttp "GET / HTTP/1.1" 200 5671
+INFO 2024-10-15 20:46:06,737 basehttp "GET / HTTP/1.1" 200 5671
+WARNING 2024-10-15 20:46:06,781 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:46:06,781 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:46:06,787 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:06,787 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:06,796 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:46:06,796 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:46:16,946 views Method home
+INFO 2024-10-15 20:46:16,970 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:46:16,970 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:46:16,993 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:16,993 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:17,002 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:46:17,002 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:46:17,029 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:46:17,029 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:46:20,737 views Method home
+INFO 2024-10-15 20:46:20,757 basehttp "GET / HTTP/1.1" 200 5671
+INFO 2024-10-15 20:46:20,757 basehttp "GET / HTTP/1.1" 200 5671
+WARNING 2024-10-15 20:46:20,782 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:46:20,782 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:46:20,787 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:20,787 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:20,800 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:46:20,800 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:46:22,672 basehttp "GET /promotional_code/ HTTP/1.1" 200 2992
+INFO 2024-10-15 20:46:22,672 basehttp "GET /promotional_code/ HTTP/1.1" 200 2992
+WARNING 2024-10-15 20:46:22,697 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:22,697 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:46:22,704 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:46:22,704 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:46:22,761 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:46:22,761 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:47:09,026 basehttp "GET /promotional_code/ HTTP/1.1" 200 2984
+INFO 2024-10-15 20:47:09,026 basehttp "GET /promotional_code/ HTTP/1.1" 200 2984
+WARNING 2024-10-15 20:47:09,051 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:47:09,051 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:47:09,061 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:47:09,061 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:47:09,102 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:47:09,102 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:49:39,621 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:49:39,621 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:51:12,441 views Method home
+INFO 2024-10-15 20:51:12,563 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:51:12,563 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:51:12,582 views Method home
+INFO 2024-10-15 20:51:12,602 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:51:12,602 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:51:12,653 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:51:12,653 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:51:12,662 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:51:12,662 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:51:12,696 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:51:12,696 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:51:13,938 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:51:13,938 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:51:13,954 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:51:13,954 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:51:13,955 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:51:13,955 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:51:53,059 views Method home
+INFO 2024-10-15 20:51:53,084 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:51:53,084 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:51:53,110 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:51:53,110 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:51:53,123 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:51:53,123 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:51:53,134 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:51:53,134 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:54:04,645 views Method home
+INFO 2024-10-15 20:54:04,702 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:54:04,702 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:54:04,771 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:54:04,771 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:54:04,807 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:54:04,807 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:54:04,826 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:54:04,826 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+INFO 2024-10-15 20:54:04,846 basehttp "GET /static/css/main/home.css HTTP/1.1" 200 7036
+INFO 2024-10-15 20:54:04,846 basehttp "GET /static/css/main/home.css HTTP/1.1" 200 7036
+INFO 2024-10-15 20:54:06,067 views Method home
+INFO 2024-10-15 20:54:06,094 basehttp "GET / HTTP/1.1" 200 5723
+INFO 2024-10-15 20:54:06,094 basehttp "GET / HTTP/1.1" 200 5723
+WARNING 2024-10-15 20:54:06,124 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:54:06,124 basehttp "GET /static/js/progress_bar.js HTTP/1.1" 404 1868
+WARNING 2024-10-15 20:54:06,129 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:54:06,129 basehttp "GET /static/js/age.js HTTP/1.1" 404 1841
+WARNING 2024-10-15 20:54:06,210 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+WARNING 2024-10-15 20:54:06,210 basehttp "GET /static/js/timer.js HTTP/1.1" 404 1847
+INFO 2024-10-15 20:54:12,564 autoreload Watching for file changes with StatReloader
+INFO 2024-10-15 20:54:12,564 autoreload Watching for file changes with StatReloader
