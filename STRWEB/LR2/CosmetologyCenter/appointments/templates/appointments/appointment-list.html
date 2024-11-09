@@ -1,13 +1,16 @@
 {% extends "layout.html" %}
 
+{% load static %}
+
 {% block head %}
+<link rel="stylesheet" href="{% static 'css/appointments/appointment-list.css' %}">
 <title>Записи</title>
 {% endblock %}
 
 {% block main %}
 <h1>Список записей:</h1>
 
-<table width="100%">
+<table>
     <thead>
         <tr>
             <th>Имя</th>

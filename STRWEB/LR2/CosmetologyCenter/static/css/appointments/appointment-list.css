@@ -1,36 +1,78 @@
-{% extends "layout.html" %}
+/* appointment-list.css */
 
-{% block head %}
-<title>Записи</title>
-{% endblock %}
+/* Основные стили для заголовка */
+h1 {
+font-size: 36px;
+color: #2E0249;
+text-align: center;
+margin-bottom: 20px;
+}
 
-{% block main %}
-<h1>Список записей:</h1>
+/* Стили для таблицы */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 30px;
+}
 
-<table width="100%">
-    <thead>
-        <tr>
-            <th>Имя</th>
-            <th>Фамилия</th>
-            <th>Дата и Время</th>
-            <th>Кабинет</th>
-            <th>Услуга</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for appointment in appointments %}
-        <tr>
-            <td>{{ appointment.client.first_name }}</td>
-            <td>{{ appointment.client.last_name }}</td>
-            <td>{{ appointment.appointmentItem }}</td>
-            <td>{{ appointment.appointmentItem.service.office }}</td>
-            <td>{{ appointment.appointmentItem.service.service_name }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>    
-</table>
+thead th {
+background-color: #FF66C4;
+color: #fff;
+padding: 15px;
+font-size: 18px;
+text-transform: uppercase;
+}
 
-<form method="get" action="{% url 'appointments:create_appointment_item' %}">
-    <button type="submit">Добавить время для записи</button>
-</form>
-{% endblock %}
+tbody td {
+padding: 12px;
+border-bottom: 1px solid #ddd;
+text-align: center;
+}
+
+/* Чередование строк в таблице */
+tbody tr:nth-child(odd) {
+background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+background-color: #e0e0e0;
+}
+
+/* Стили для ячеек таблицы при наведении */
+tbody tr:hover {
+background-color: #D100D1;
+color: #fff;
+}
+
+/* Стили для кнопки добавления записи */
+button {
+display: block;
+margin: 0 auto;
+padding: 10px 20px;
+background-color: #FF66C4;
+color: #fff;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #2E0249;
+}
+
+/* Стили для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    h1 {
+    font-size: 28px;
+    }
+    thead th, tbody td {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

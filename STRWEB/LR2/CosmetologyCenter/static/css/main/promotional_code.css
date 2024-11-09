@@ -1,0 +1,50 @@
+/* promotional-codes.css */
+
+/* Основные стили для контейнеров с промокодами */
+.promo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Стили для заголовка */
+.promo-container h1 {
+    font-size: 36px;
+    color: purple;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для отображения промокодов */
+.promo-container h3 {
+    font-size: 24px;
+    color: #FF66C4;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Эффект при наведении на промокоды */
+.promo-container h3:hover {
+    background-color: #D100D1;
+    color: #fff;
+}
+
+/* Стили для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    .promo-container h1 {
+        font-size: 28px;
+    }
+
+    .promo-container h3 {
+        font-size: 20px;
+    }
+}

@@ -1,10 +1,14 @@
 /* Стили для заголовка */
 h1.company-title {
     text-align: center;
-    font-size: 3em;
+    font-size: 40px;
     color: pink;
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-kerning: normal;
+    font-variant: small-caps;
 }
 
 #scene {
@@ -327,14 +331,20 @@ h1.company-title {
     transform: scale(1.1);
 }
 
+.ads {
+    margin-left: 350px;
+}
 /* Стили для блока с новостью */
 .news {
+    overflow: hidden;
     border: 2px solid #FF66C4;
     padding: 20px;
     background-color: #F9F9F9;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
 }
 
@@ -346,6 +356,7 @@ h1.company-title {
 }
 
 .news a {
+    text-overflow: ellipsis;
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;

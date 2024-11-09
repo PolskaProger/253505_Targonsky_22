@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Описание страницы для поисковых систем">
 <meta name="keywords" content="Ключевые слова, SEO, Django">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 <meta name="author" content="Dmitry">
 <title>TEST</title>
 {% endblock %}
@@ -82,12 +83,6 @@
         <h2>Раздел 3</h2>
         <p>Содержимое раздела 3.</p>
     </section>
-
-    <aside>
-        <h2>Боковая информация</h2>
-        <p>Это боковая панель с дополнительной информацией.</p>
-    </aside>
-
     <footer>
         <p>&copy; 2023 Ваш сайт. Все права защищены.</p>
     </footer>
@@ -122,35 +117,6 @@
         </tbody>
     </table>
 
-    <h2>Форма ввода данных</h2>
-    <form action="/submit/" method="post" itemscope itemtype="https://schema.org/Action">
-        {% csrf_token %}
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required contenteditable="true">
-
-        <label for="email">Электронная почта:</label>
-        <input type="email" id="email" name="email" required spellcheck="false">
-
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="date">Дата рождения:</label>
-        <input type="date" id="date" name="date_of_birth">
-
-        <label for="color">Выберите любимый цвет:</label>
-        <input type="color" id="color" name="favorite_color">
-
-        <label for="country">Страна:</label>
-        <select id="country" name="country">
-            <option value="ru">Россия</option>
-            <option value="us">США</option>
-            <option value="uk">Великобритания</option>
-            <option value="by">Беларусь</option>
-        </select>
-
-        <input type="submit" value="Отправить">
-    </form>
-
     <h2>Медиа контент</h2>
     <figure>
         <img src="../media/images/Piwo.jpg" alt="Пример изображения" style="max-width:100%; height:auto;">
@@ -176,5 +142,66 @@
     <div id="global-attributes" class="content-section" data-info="Пример глобальных атрибутов" lang="ru" dir="ltr">
         <p lang="en">This is a paragraph with a <span style="color:red;">global attribute example</span>.</p>
     </div>
+
+
+
+    <h1>ПОЛИГОН CSS</h1>
+            <h2>Список</h2>
+    <ul id="myList">
+        <li>Первый элемент</li>
+        <li>Второй элемент</li>
+        <li>Третий элемент</li>
+        <li>Последний элемент</li>
+    </ul>
+
+    <h2>Таблица</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Первый</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Второй</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Последний</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Форма</h2>
+    <form>
+        <label for="name">Имя (обязательно):</label>
+        <input type="text" id="name" class="required" required><br><br>
+
+        <label for="age">Возраст (доступный):</label>
+        <input type="number" id="age" class="available" min="1" max="100"> <br><br>
+
+        <label for="disabled">Заблокированное поле:</label>
+        <input type="text" id="disabled" class="disabled" disabled><br><br>
+
+        <label for="range">Число вне диапазона:</label>
+        <input type="number" id="range" class="out-of-range" min="1" max="10"><br><br>
+
+        <label for="checkbox">Согласен:</label>
+        <input type="checkbox" id="checkbox"><br><br>
+
+        <label for="radio">Выбор:</label>
+        <input type="radio" id="radio" name="choice"><br><br>
+    </form>
+
+    <h2>Цитаты</h2>
+    <p class="quote-en">Это пример английской цитаты.</p>
+    <p class="quote-ru">Это пример русской цитаты.</p>
+
 </main>
 {% endblock %}

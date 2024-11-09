@@ -1,11 +1,14 @@
 {% extends "layout.html" %}
 
+{% load static %}
+
 {% block head %}
+<link rel="stylesheet" href="{% static 'css/main/price-list.css' %}">
 <title>Прайс-лист</title>
 {% endblock %}
 
 {% block main %}
-<div>
+<div class="price-list-container">
   <h1>Прайс-лист</h1>
   {% for service_type, services in services_by_type.items %}
     <details>

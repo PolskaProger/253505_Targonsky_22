@@ -20,6 +20,7 @@ aside ul li a {
     color: #fff;
     text-decoration: none;
     display: block;
+    text-align: center;
     padding: 10px 20px;
     font-weight: bold;
     border: 2px solid transparent;
@@ -30,73 +31,9 @@ aside ul li a {
 aside ul li a:hover {
     background-color: #fff;
     color: #2E0249;
-    border-color: black; /* Темно-фиолетовая окантовка */
+    border-color: purple; /* Темно-фиолетовая окантовка */
 }
 
-/* Круглые блоки для компаний-партнеров */
-.partners-list li {
-    list-style: none;
-    display: inline-block;
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* Круглая форма */
-    overflow: hidden;
-    background-color: #E0E0E0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
-    text-align: center;
-}
-
-.partners-list li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Увеличение изображения до границ круга */
-}
-
-/* Шрифт и кернинг для названия компании */
-.company-title {
-    font-family: 'Arial', sans-serif;
-    font-size: 3em;
-    color: #2E0249;
-    letter-spacing: 0.05em; /* Настройка кернинга */
-    text-transform: uppercase; /* Верхний регистр */
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Позиционирование для последней актуальной новости */
-.news {
-    position: relative;
-    margin: 40px 0;
-    padding: 20px;
-    border: 2px solid #2E0249;
-    background-color: #F9F9F9;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для новости */
-}
-
-.news img {
-    display: block;
-    margin: 20px auto;
-}
-
-/* Стили для кнопки "Показать больше" */
-.news a {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #2E0249;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-}
-
-.news a:hover {
-    background-color: #fff;
-    color: #2E0249;
-    border: 2px solid #2E0249;
-}
 
 /* Каталог услуг (сетка) */
 .service-list {
@@ -136,6 +73,9 @@ body {
 h1, h2, h3 {
     color: #2E0249;
 }
+main {
+    margin-bottom: 80px; /* Задаем отступ, чтобы контент не перекрывался футером */
+}
     /* Стили для футера */
 footer {
     position: fixed;
@@ -147,10 +87,6 @@ footer {
     text-align: center;
     padding: 5px;
     z-index: 999; /* чтобы футер всегда был сверху */
-}
-
-main {
-    margin-bottom: 80px; /* Задаем отступ, чтобы контент не перекрывался футером */
 }
 
 
@@ -203,7 +139,7 @@ footer span {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 99;
     opacity: 1;
     animation: fadeOut 1s ease forwards; /* Анимация исчезновения */
     animation-delay: 0.1s; /* Начинает исчезать через 1 секунду */
@@ -359,183 +295,6 @@ iframe:hover, img:hover {
     transform: scale(1.05); /* Легкое увеличение при наведении */
 }
 
-#sertificate {
-    border: 30px solid transparent;
-    border-image: url(/media/images/border.png.png);
-    display: inline-block;
-    width: 600px;
-}
-
-#sertificate > div > div{
-    background: -webkit-linear-gradient(130deg, rgba(255, 255, 255, 0.9), rgba(255, 236, 209, 0.9), rgba(255, 255, 255, 0.9));
-}
-
-#sertificate > div {
-    background-image: url(/media/images/fon.jfif.jfif) 28 round;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#sertificate p:first-child {
-    color: rgb(26, 113, 212);
-    font-weight: 900;
-    text-align: center;
-    padding: 20px;
-}
-
-#sertificate p:nth-child(2) {
-    color: rgb(167, 10, 230);
-    font-weight: 900;
-    text-align: center;
-    padding: 30px;
-    font-size: 80px;
-}
-
-#sertificate p:nth-child(3) {
-    color: rgb(73, 28, 238);
-    font-weight: 900;
-    text-align: center;
-    font-size: 30px;
-}
-
-#sertificate p:nth-child(4) {
-    color: rgb(178, 28, 238);
-    font-weight: 900;
-    text-align: center;
-    font-size: 30px;
-}
-
-#sertificate p:nth-child(5) {
-    color: rgb(58, 45, 240);
-    font-weight: 900;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 20px;
-}
-
-#sertificate p:nth-child(6) {
-    color: rgb(58, 45, 240);
-    font-weight: 900;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 17px;
-}
-
-#sertificate p:nth-child(7) {
-    color: rgb(178, 28, 238);
-    font-weight: 900;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-}
-
-#sertificate p:nth-child(8), #sertificate p:nth-child(9), #sertificate p:nth-child(10) {
-    color: rgb(34, 0, 226);
-    font-weight: 500;
-    font-size: 15px;
-    margin-left: 60px;
-}
-
-#sertificate p:nth-child(11) {
-    color: rgb(34, 0, 226);
-    font-weight: 500;
-    font-size: 18px;
-    margin-left: 60px;
-    margin-top: 30px;
-}
-
-#sertificate p:last-child {
-    color: rgb(58, 45, 240);
-    font-weight: 900;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 20px;
-    padding-bottom: 50px;
-}
-
-/* Многоколоночный макет для статей */
-.news-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Гибкое количество колонок */
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Стили для статьи */
-.news-article {
-    border: 2px solid #2E0249;
-    padding: 20px;
-    background-color: #F9F9F9;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-/* Обрезка текста с использованием overflow */
-.short-description {
-    overflow: hidden;
-    text-overflow: ellipsis; /* Многоточие, если текст не помещается */
-    white-space: nowrap;
-}
-
-/* Картинка, которая будет корректно вписываться в колонку */
-.news-article img {
-    width: 100%; /* Занимает всю ширину колонки */
-    height: auto; /* Автоматическая корректировка высоты */
-    object-fit: cover; /* Картинка масштабируется по высоте и ширине, сохраняя пропорции */
-    border-radius: 8px; /* Скругленные углы для картинки */
-}
-
-.faq-content details {
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.faq-content summary {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    background-color: #eaeaea;
-    border-radius: 8px;
-    outline: none;
-    transition: background-color 0.3s ease;
-}
-
-/* Стиль раскрытых вопросов */
-.faq-content details[open] summary {
-    background-color: #f0f0f0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.faq-content p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #555;
-}
-
-.faq-content details p {
-    padding: 10px;
-    background-color: #fdfdfd;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-details summary:hover {
-    background-color: #dcdcdc;
-}
-
-/* Дополнительная информация о дате */
-.faq-content details p:last-child {
-    font-size: 0.9em;
-    color: #888;
-    margin-top: 5px;
-}
 
 /* Контейнер для карточек сотрудников */
 .doctors-container {
@@ -969,6 +728,79 @@ input:invalid, textarea:invalid, select:invalid {
     background-color: #2980b9;
 }
 
+
+        /* Стили для списков */
+        ul {
+            list-style-type: none; /* Убираем стандартные маркеры */
+            padding: 0;
+        }
+
+        /* Первый элемент списка */
+        #myList li:first-child {
+            font-weight: bold; /* Выделяем первый элемент */
+            color: #007BFF; /* Синий цвет */
+        }
+
+        /* Последний элемент списка */
+        #myList li:last-child {
+            font-style: italic; /* Курсив для последнего элемента */
+            color: #28A745; /* Зеленый цвет */
+        }
+
+        /* n-й элемент списка (например, каждый второй) */
+        #myList li:nth-child(2n) {
+            background-color: #f0f0f0; /* Серый фон для четных элементов */
+        }
+
+        /* Стили для таблицы */
+
+
+        /* Стили для формы */
+        .required {
+            border: 2px solid #dc3545; /* Красная рамка для обязательных полей */
+        }
+
+        .available {
+            background-color: #d4edda; /* Зеленый фон для доступных полей */
+        }
+
+        .disabled {
+            background-color: #f8d7da; /* Розовый фон для заблокированных полей */
+            color: #856404; /* Цвет текста */
+            pointer-events: none; /* Отключаем взаимодействие */
+        }
+
+        .out-of-range {
+            border: 2px solid #ffc107; /* Желтая рамка для элементов вне диапазона */
+        }
+
+        /* Стили для флажков и переключателей */
+        input[type="checkbox"]:checked {
+            accent-color: #007BFF; /* Цвет выделенного флажка */
+        }
+
+        input[type="radio"]:checked {
+            accent-color: #28A745; /* Цвет выделенного переключателя */
+        }
+
+        /* Кавычки для цитат */
+        .quote-en:before {
+            content: '"'; /* Английские кавычки */
+        }
+
+        .quote-en:after {
+            content: '"'; /* Английские кавычки */
+        }
+
+        .quote-ru:before {
+            content: '«'; /* Русские кавычки */
+        }
+
+        .quote-ru:after {
+            content: '»'; /* Русские кавычки */
+        }
+
+
 /* Медиа-запрос для адаптации под мобильные устройства */
 @media (max-width: 768px) {
     aside ul {
@@ -986,310 +818,4 @@ input:invalid, textarea:invalid, select:invalid {
     }
 }
 
-#scene {
-    position: relative;
-    height: 400px;
-}
-
-#scene img:hover {
-    transform: none;
-}
-
-#scene img, #scene h1 {
-    position: absolute;
-    background-color: none;
-    border: none;
-    box-shadow: none;
-}
-
-#brush, #new_eyes, #new_eyebrows, #new_nose, #new_mouse, #cheeks, #scene h1 {
-    opacity: 0;
-}
-
-#brush {
-    width: 70px;
-    animation-name: brush;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes brush {
-    29% {
-        opacity: 0;
-        top: 180px;
-    }
-    30% {
-        opacity: 1;
-        left: 0;
-    }
-    70% {
-        left: 500px;
-        opacity: 1;
-        top: 180px;
-    }
-    71% {
-        opacity: 0;
-    }
-}
-
-#face {
-    animation-name: face;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes face {
-    99% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#new_eyes {
-    animation-name: new_eyes;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes new_eyes {
-    50% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#old_eyes {
-    animation-name: old_eyes;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes old_eyes {
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#new_eyebrows {
-    animation-name: new_eyebrows;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes new_eyebrows {
-    50% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#old_eyebrows {
-    animation-name: old_eyebrows;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes old_eyebrows {
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#new_mouse {
-    animation-name: new_mouse;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes new_mouse {
-    50% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#old_mouse {
-    animation-name: old_mouse;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes old_mouse {
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#new_nose {
-    animation-name: new_nose;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes new_nose {
-    50% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#old_nose {
-    animation-name: old_nose;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes old_nose {
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#cheeks {
-    animation-name: cheeks;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes cheeks {
-    50% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#scene h1 {
-    animation-name: name;
-    animation-delay: 10s;
-    animation-duration:3s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes name {
-    0% {
-        opacity: 1;
-        transform: scale(0);
-        left: 50px;
-        bottom: 50px;
-    }
-    100% {
-        transform: scale(2);
-        opacity: 1;
-        left: 150px;
-        bottom: 150px;
-    }
-}
-/* Основные стили для страницы прайс-листа */
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #2E0249;
-    margin-bottom: 20px;
-}
-
-/* Оформление списков услуг */
-details {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-summary {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #FF66C4;
-}
 

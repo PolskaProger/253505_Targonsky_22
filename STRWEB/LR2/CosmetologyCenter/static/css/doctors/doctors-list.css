@@ -1,31 +1,86 @@
-{% extends "layout.html" %}
+/* Стили для контейнера с карточками сотрудников */
+.doctors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-{% load static %}
+/* Стили для каждой карточки сотрудника */
+.doctor-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
 
-{% block head %}
-<title>Наши сотрудники</title>
-<link rel="stylesheet" href="{% static 'styles/contacts.css' %}">
-{% endblock %}
+/* Эффект увеличения карточки при наведении */
+.doctor-card:hover {
+    transform: scale(1.05);
+}
 
-{% block main %}
-<h1>Наши сотрудники</h1>
+/* Стили для изображения сотрудника */
+.doctor-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #FF66C4;
+}
 
-<div class="doctors-container">
-    {% for doctor in doctors %}
-        <div class="doctor-card">
-           {% if doctor.image %}
-                <img src="{{ doctor.image.url }}" alt="Фото сотрудника">
-            {% else %}
-                <img src="{% static 'default.jpg' %}" alt="Фото сотрудника">
-            {% endif %}
-            <div class="doctor-info">
-                <h3>{{ doctor.first_name }} {{ doctor.last_name }}</h3>
-                <p>Телефон: {{ doctor.phone }}</p>
-                <p>Email: {{ doctor.email }}</p>
-                <p>Категория:{{ doctor.category.all|join:", " }}</p>
-                <a href="{% url 'doctors:doctor-detail' doctor.id %}" class="details-link">Подробнее</a>
-            </div>
-        </div>
-    {% endfor %}
-</div>
-{% endblock %}
+/* Стили для информации о сотруднике */
+.doctor-info {
+    padding: 15px;
+}
+
+.doctor-info h3 {
+    font-size: 1.5em;
+    color: #FF66C4;
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Стили для ссылки "Подробнее" */
+.details-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #FF66C4;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.details-link:hover {
+    border-color: purple;
+    background-color: white;
+    color: #FF66C4;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .doctors-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doctor-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}

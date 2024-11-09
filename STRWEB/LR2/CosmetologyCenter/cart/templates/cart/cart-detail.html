@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block head %}
-
+<link rel="stylesheet" href="{% static 'css/cart/cart-detail.css' %}">
 <title>Корзина</title>
 {% endblock %}
 
@@ -23,32 +23,36 @@
     <tbody>
         {% for item in cart %}
         <tr>
-            <td>{{ item.service.service_name }}</td>
-            <td>{{ item.date }}</td>
-            <td>{{ item.time }}</td>
-            <td class="num">${{ item.service.price }}</td>
-            <td><a href="{% url 'cart:cart_remove' item.id %}">Удалить</a></td>
+            <td data-label="Услуга">{{ item.service.service_name }}</td>
+            <td data-label="Дата">{{ item.date }}</td>
+            <td data-label="Время">{{ item.time }}</td>
+            <td data-label="Цена" class="num">${{ item.service.price }}</td>
+            <td data-label="Удаление"><a href="{% url 'cart:cart_remove' item.id %}">Удалить</a></td>
         </tr>
         {% endfor %}
         <tr class="total">
-            <td>Total</td>
-            <td colspan="5"></td>
-            <td class="num total_price">
-                ${{ cart.get_total_price|floatformat:"2" }}
-            </td>
+            <td>Общая сумма</td>
+            <td colspan="2"></td>
+            <td class="num total_price">${{ cart.get_total_price|floatformat:"2" }}</td>
         </tr>
-    </tbody>    
+    </tbody>
 </table>
 
 <hr>
-<form method="post" action="{% url 'appointments:create_appointments' %}" id="appointmentForm">
+<form method="post" action="{% url 'appointments:create_appointments' %}" id="appointmentForm" class="form-container">
     {% csrf_token %}
-    <button type="button" id="ageConfirmationButton">Записаться</button>
+    <div class="form-group">
+        <label for="dob">Введите промокод:</label>
+        <input type="number" id="dob" placeholder="Промокод">
+    </div>
+    <div class="form-group">
+        <button type="button" onclick="applyPromo()" class="form-button">Применить скидку</button>
+    </div>
+    <div class="form-group">
+        <button type="button" id="ageConfirmationButton" class="form-button">Записаться</button>
+    </div>
 </form>
 
-<input type="number" id="dob">
-<button onclick="applyPromo()">Применить скидку</button>
-<script src="{% static 'js/promo.js'%}"></script>
 
 <script>
     document.getElementById("ageConfirmationButton").addEventListener("click", function () {
@@ -59,4 +63,3 @@
     });
 </script>
 {% endblock %}
-

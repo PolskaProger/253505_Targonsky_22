@@ -1,0 +1,85 @@
+/* Стили для контейнера с информацией о сервисе */
+.service-details {
+    background-color: #f9f9f9;
+    border: 2px solid #2E0249;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Стили для заголовка сервиса */
+.service-details h1 {
+    font-size: 2em;
+    color: #FF66C4;
+    margin-bottom: 15px;
+}
+
+/* Стили для описания услуги */
+.service-details p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Стили для изображения услуги */
+.service-details img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+label {
+    color: #FF66C4;
+}
+/* Стили для формы добавления в корзину */
+.service-details form {
+    margin-top: 20px;
+}
+
+/* Стили для кнопки добавления в корзину */
+.service-details button {
+    padding: 10px 20px;
+    background-color: #FF66C4;
+    color: #fff;
+    border: 2px transition;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform  0.3s ease;
+}
+
+.service-details button:hover {
+    border-color: purple;
+    background-color: white;
+    color: #FF66C4;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .service-details {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .service-details h1 {
+        font-size: 1.8em;
+    }
+
+    .service-details p {
+        font-size: 1em;
+    }
+
+    .service-details img {
+        max-width: 100%;
+    }
+
+    .service-details button {
+        font-size: 1em;
+    }
+}
