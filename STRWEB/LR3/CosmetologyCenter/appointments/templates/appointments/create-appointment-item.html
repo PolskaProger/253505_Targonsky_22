@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/appointments/create-appointment-item.css' %}">
+<title>Создать время для записи</title>
+{% endblock %}
+
+{% block main %}
+<h1>Создать запись на услугу</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Создать</button>
+</form>
+{% endblock %}

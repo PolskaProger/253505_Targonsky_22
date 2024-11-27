@@ -1,0 +1,76 @@
+/* create-client.css */
+
+/* Основные стили для заголовка */
+h1 {
+    font-size: 36px;
+    color: purple;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для формы */
+form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для полей формы */
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 16px;
+    color: purple;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Стили для кнопки отправки */
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    background-color: #FF66C4;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2E0249;
+}
+
+/* Стили для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

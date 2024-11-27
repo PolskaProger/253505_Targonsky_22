@@ -1,0 +1,81 @@
+/* Стили для основного контейнера статьи */
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border: 2px solid #2E0249;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    column-count: 2; /* Количество колонок */
+    column-gap: 20px; /* Промежуток между колонками */
+    margin-bottom: 30px;
+}
+
+/* Стили для заголовка новости */
+article h1 {
+    color: purple;
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+/* Стили для изображения */
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для текста описания */
+article p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    break-inside: avoid; /* Предотвращает разрыв текста внутри параграфов */
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+.back {
+    display: inline-block;
+    text-decoration: none;
+    background-color: purple;
+    color: #FFF;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.back:hover {
+    background-color: white;
+    color: purple;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    article {
+        padding: 15px;
+        column-count: 1; /* Одноколоночный макет на мобильных устройствах */
+    }
+
+    article h1 {
+        font-size: 2em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    .back {
+        font-size: 24px; /* Уменьшение размера шрифта кнопки */
+    }
+}

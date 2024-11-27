@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>Наши сотрудники в таблице</title>
+<link rel="stylesheet" href="{% static 'css/doctors/doctors-list.css' %}">
+<script src="{% static 'js/contacts.js' %}" defer></script>
+<style>
+  .invalid {
+    border: 2px solid red;
+    background-color: pink;
+  }
+</style>
+{% endblock %}
+
+{% block main %}
+<h1>Наши сотрудники в таблице!</h1>
+
+<table id="contactsTable">
+    <thead>
+        <tr>
+            <th><input type="checkbox" id="selectAll"></th>
+            <th onclick="sortTable(1)">ФИО</th>
+            <th onclick="sortTable(2)">Фото</th>
+            <th onclick="sortTable(3)">Работа</th>
+            <th onclick="sortTable(4)">Телефон</th>
+            <th onclick="sortTable(5)">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for doctor in doctors %}
+        <tr onclick="showDetails({{ doctor.id }})">
+            <td><input type="checkbox" name="select" value="{{ doctor.id }}"></td>
+            <td>{{ doctor.last_name }} {{ doctor.first_name }}</td>
+            <td><a href="{% url 'doctors:doctor-detail' doctor.id %}"><img src="{{ doctor.image.url }}"  alt="{{ doctor.last_name }}" width="200" height="200"/> </a></td>
+            <td>{{ doctor.category.all|join:", " }}</td>
+            <td>{{ doctor.phone }}</td>
+            <td>{{ doctor.email }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<!-- Контроллеры пагинации -->
+<div id="pagination">
+  <button onclick="prevPage()">Предыдущая</button>
+  <button onclick="nextPage()">Следующая</button>
+</div>
+<!-- Фильтрация -->
+<input type="text" id="filterInput">
+<button onclick="filterTable()">Найти</button>
+<!-- Форма добавления -->
+<form id="addForm" onsubmit="addDoctorToTable(event); return false;">
+    {% csrf_token %}
+    <input type="text" name="last_name" placeholder="Фамилия" required>
+    <input type="text" name="first_name" placeholder="Имя" required>
+    <input type="text" name="image" id="image" placeholder="Ссылка на фото" required>
+    <input type="text" name="category" placeholder="Работа" required>
+    <input type="text" name="phone" id="phone" placeholder="Телефон" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <div id="validationMessage" style="color: red; display: none;"></div>
+    <button type="submit" id="addButton">Добавить в таблицу</button>
+</form>
+<!-- Премирование -->
+<button onclick="generateReward()">Премировать</button>
+<div id="rewardMessage"></div>
+<!-- Предлоадер -->
+
+{% endblock %}

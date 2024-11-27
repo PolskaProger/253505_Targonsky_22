@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/appointments/create-client.css' %}">
+<title>Оформление записи</title>
+{% endblock %}
+
+{% block main %}
+<h1>Заполните информацию о себе</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Записаться</button>
+</form>
+{% endblock %}

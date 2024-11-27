@@ -1,0 +1,78 @@
+/* Стили для контейнера новостей */
+.news-container {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Гибкое количество колонок */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Стили для каждой статьи */
+.news-article {
+    border: 2px solid #2E0249;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Плавное увеличение */
+    overflow: hidden; /* Скрыть переполнение */
+}
+
+/* Стили для краткого описания */
+.short-description {
+    overflow: hidden;
+}
+h4 {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Многоточие, если текст не помещается */
+    white-space: nowrap; /* Одна строка */
+    max-width: 100%; /* Максимальная ширина */
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Эффект увеличения при наведении на статью */
+.news-article:hover {
+    transform: scale(1.03);
+}
+
+/* Стили для заголовков */
+.news-article h2 {
+    color: purple;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Стили для изображений */
+.news-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Стили для кнопки "Читать далее" */
+.news-article a h2 {
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: purple;
+    font-size: 1.5em;
+    background: purple;
+    color: white;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+.news-article a h2:hover {
+    border-radius: 8px;
+    background: white;
+    color: purple;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+}

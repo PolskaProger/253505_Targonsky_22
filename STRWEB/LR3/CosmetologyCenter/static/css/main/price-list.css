@@ -1,0 +1,107 @@
+/* price-list.css */
+
+/* Основные стили для контейнера прайс-листа */
+.price-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка прайс-листа */
+.price-list-container h1 {
+    text-align: center;
+    font-size: 36px;
+    color: purple;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Стили для элементов details в прайс-листе */
+.price-list-container details {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Стили для summary */
+.price-list-container summary {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF66C4;
+    outline: none;
+    position: relative;
+    padding: 5px;
+}
+
+/* Стили для списка услуг */
+.price-list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* Стили для элементов списка */
+.price-list-container li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Стили для ссылок на услуги */
+.price-list-container li a {
+    color: #FF66C4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Изменение цвета ссылки при наведении */
+.price-list-container li a:hover {
+    color: #D100D1;
+}
+
+/* Псевдоэлементы для выделения первой буквы абзацев и добавления контекста */
+.price-list-container li a::first-letter {
+    font-size: 1.5em;
+    color: #2E0249;
+    font-weight: bold;
+}
+
+/* Стиль маркеров для одного из списков */
+.price-list-container ul li::before {
+    content: "\2665"; /* Юникод символ маркера */
+    color: #FF66C4;
+    font-size: 1.2em;
+    padding-right: 10px;
+}
+
+/* Контекст в начале и конце фрагмента текста */
+.price-list-container li a::before {
+    content: "[ ";
+    color: #2E0249;
+}
+
+.price-list-container li a::after {
+    content: " ]";
+    color: #2E0249;
+}
+
+/* Адаптивные стили для прайс-листа */
+@media (max-width: 768px) {
+    .price-list-container h1 {
+        font-size: 28px;
+    }
+
+    .price-list-container summary {
+        font-size: 18px;
+    }
+
+    .price-list-container li {
+        padding: 5px;
+    }
+}

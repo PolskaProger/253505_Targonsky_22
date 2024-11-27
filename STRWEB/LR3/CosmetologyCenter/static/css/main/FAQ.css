@@ -1,0 +1,90 @@
+/* Основные стили для страницы FAQ */
+.faq-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #2E0249;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка */
+.faq-content h1 {
+    color: #FF66C4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для details и summary */
+details {
+    background-color: #fff;
+    border: 1px solid #2E0249;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2E0249;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Стили для раскрытого текста */
+details p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Стили для даты добавления */
+details p:last-child {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Стили при раскрытии */
+details[open] {
+    background-color: #FFEBF6;
+}
+
+/* Стили для выделения важных частей */
+details summary:hover {
+    color: #FF66C4;
+}
+
+/* Анимация для раскрытия и закрытия */
+details[open] p {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .faq-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    details {
+        padding: 8px;
+    }
+
+    summary {
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,119 @@
+/* cart-detail.css */
+
+/* Основные стили для заголовка */
+h1 {
+    font-size: 36px;
+    color: #FF66C4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы */
+table.cart {
+    width: 100%;
+    border-collapse: collapse; /* Убирает двойные линии */
+    margin-bottom: 30px; /* Отступ снизу */
+    empty-cells: hide;
+}
+
+thead th {
+    background-color: #FF66C4;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase; /* Заглавные буквы */
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Граница между строками */
+    text-align: center; /* Горизонтальное выравнивание */
+}
+
+/* Чередование строк в таблице */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/* Стили для ячеек таблицы при наведении */
+tbody tr:hover {
+    background-color: #D100D1;
+    color: #fff; /* Цвет текста при наведении */
+}
+
+/* Стили для общей суммы */
+.total {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.total_price {
+    font-size: 20px;
+}
+
+/* Стили для ссылок удаления */
+a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Стили для кнопки добавления записи */
+button {
+    display: block;
+    margin: 20px auto 0; /* Центрирование кнопки */
+    padding: 12px 25px;
+    background-color: #FF66C4;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2E0249;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Меньший размер заголовка */
+    }
+
+    table.cart, table.cart thead, table.cart tbody, table.cart th, table.cart td, table.cart tr {
+        display: block; /* Блочное отображение для мобильных устройств */
+    }
+
+    table.cart th {
+        display: none; /* Скрыть заголовки */
+    }
+
+    table.cart td {
+        text-align: right; /* Выравнивание текста вправо */
+        padding-left: 50%; /* Отступ слева */
+        position: relative; /* Позиционирование для псевдоэлемента */
+    }
+
+    table.cart td:before {
+        content: attr(data-label); /* Псевдоэлемент для отображения заголовка ячейки */
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold; /* Жирный шрифт */
+    }
+
+    button {
+        width: 90%; /* Ширина кнопки на мобильных устройствах */
+    }
+}

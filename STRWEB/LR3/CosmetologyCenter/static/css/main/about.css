@@ -1,0 +1,262 @@
+/* Основные стили для страницы "О компании" */
+#about {
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    padding: 20px; /* отступы */
+    font-kerning: normal;
+    line-height: 1.6; /* межстрочный интервал */
+}
+
+/* Стили заголовков */
+#about h1, #about h2 {
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    color: #FF66C4;
+    text-transform: uppercase; /* оформление заголовков с помощью text-transform */
+    font-weight: bold;
+    font-kerning: normal;
+    letter-spacing: 0.05em; /* интервал между символами */
+    margin-bottom: 20px; /* поля */
+    line-height: 1.6;
+}
+
+#about h1 {
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    font-size: 2.5em; /* шрифт заголовка первого уровня */
+}
+
+#about h2 {
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    font-kerning: normal;
+    font-size: 1.8em; /* шрифт заголовка второго уровня */
+    margin-top: 30px; /* поля */
+}
+
+/* Стили для абзацев */
+#about p {
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    font-size: 1.1em; /* шрифт абзаца */
+    color: #2E0249;
+    margin-bottom: 15px; /* поля */
+    text-indent: 1em; /* красная строка */
+    word-spacing: 2px; /* интервал между словами */
+    letter-spacing: 0.5px; /* интервал между символами */
+    overflow-wrap: break-word; /* перенос слов */
+}
+
+/* Первую букву абзаца выделить большим размером */
+#about p::first-letter {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 2em; /* размер первой буквы */
+    font-weight: bold;
+    color: #FF66C4; /* цвет первой буквы */
+}
+
+/* Стили для списка */
+#about ul {
+    list-style-type: none; /* убираем маркеры списка */
+    padding-left: 0;
+}
+
+#about ul li {
+    position: relative;
+    padding-left: 25px; /* отступ для маркера */
+    margin-bottom: 10px; /* поля */
+}
+
+/* Маркер для списка в виде символа юникода */
+#about ul li::before {
+    content: "\2713"; /* Галочка как маркер */
+    position: absolute;
+    left: 0;
+    color: #FF66C4; /* цвет маркера */
+}
+
+/* Стили для ссылок */
+#about a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#about a:hover {
+    color: pink;
+    text-decoration: none; /* убираем подчеркивание при наведении */
+}
+/* Стили для видео */
+iframe {
+    border: 2px solid #FF66C4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для логотипа */
+#about img {
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для секции истории */
+#history {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border: 2px solid #2E0249;
+    border-radius: 8px;
+}
+/* Стили для сертификата */
+#sertificate {
+    background: linear-gradient(135deg, #FF66C4 25%, #D100D1 50%, #2E0249 75%);
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+#sertificate > div > div{
+background: -webkit-linear-gradient(130deg, rgba(255, 255, 255, 0.9), rgba(255, 236, 209, 0.9), rgba(255, 255, 255, 0.9));
+}
+
+#sertificate > div {
+    background-image: url(/media/images/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#sertificate p:first-child {
+    color: rgb(26, 113, 212);
+    font-weight: 900;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+    padding: 20px;
+}
+
+#sertificate p:nth-child(2) {
+    color: rgb(167, 10, 230);
+    font-weight: 900;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+    padding: 30px;
+    font-size: 80px;
+}
+
+#sertificate p:nth-child(3) {
+    color: rgb(73, 28, 238);
+    font-weight: 900;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+    font-size: 30px;
+}
+
+#sertificate p:nth-child(4) {
+    color: rgb(178, 28, 238);
+    font-variant-caps: all-small-caps;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+}
+
+#sertificate p:nth-child(5) {
+    color: rgb(58, 45, 240);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+#sertificate p:nth-child(6) {
+    color: rgb(58, 45, 240);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+#sertificate p:nth-child(7) {
+    color: rgb(178, 28, 238);
+    font-weight: 900;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+#sertificate p:nth-child(8), #sertificate p:nth-child(9), #sertificate p:nth-child(10) {
+    color: rgb(34, 0, 226);
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 60px;
+}
+
+#sertificate p:nth-child(11) {
+    color: rgb(34, 0, 226);
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+#sertificate p:last-child {
+    color: rgb(58, 45, 240);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+/* Стили для контактов */
+#contacts {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовков контактов */
+#contacts h2 {
+    color: #FF66C4;
+    margin-bottom: 15px;
+}
+
+/* Стили для списков контактов */
+#contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacts ul li {
+    margin-bottom: 10px;
+}
+
+/* Центрирование видео */
+iframe, img {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    #about, #history, #contacts, #sertificate {
+        padding: 15px;
+    }
+
+    #about h1 {
+        font-size: 2em;
+    }
+
+    #about h2 {
+        font-size: 1.5em;
+    }
+}

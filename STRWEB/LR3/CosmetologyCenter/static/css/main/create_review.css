@@ -1,0 +1,109 @@
+/* Основные стили для формы отзывов */
+.review-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #2E0249;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовков формы */
+.review-form h1 {
+    color: #FF66C4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для групп полей формы */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Стили для меток */
+.form-group label {
+    font-size: 1.1em;
+    color: #2E0249;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Стили для полей ввода */
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2E0249;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+/* Псевдоклассы для полей ввода */
+.form-group input[type="text"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #FF66C4;
+    outline: none;
+}
+
+/* Стили для кнопки отправки */
+.review-form input[type="submit"] {
+    background-color: #2E0249;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Псевдоклассы для кнопки отправки */
+.review-form input[type="submit"]:hover {
+    background-color: #FF66C4;
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+    color: #FF0000;
+    font-size: 0.9em;
+}
+
+/* Стили для обязательных полей */
+.form-group input[required],
+.form-group textarea[required] {
+    border-left: 4px solid #FF66C4;
+}
+
+/* Стили для полей с ошибками */
+.form-group input:invalid,
+.form-group textarea:invalid {
+    border-color: #FF0000;
+}
+
+/* Стили для текстовой области */
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Медиа-запрос для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    .review-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-group label {
+        font-size: 1em;
+    }
+
+    .review-form input[type="submit"] {
+        font-size: 1em;
+    }
+}
